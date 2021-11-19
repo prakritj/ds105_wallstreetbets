@@ -20,7 +20,7 @@ wsb = reddit.subreddit('wallstreetbets')
 for submission in wsb.search('Daily Discussion Thread for', sort='new', time_filter='all', limit=500):
     if 'Daily Discussion Thread for ' in submission.title:
         if submission.created_utc >= unix_start and submission.created_utc <= unix_end: #need to check whether the post is within our two week window
-            #I need title, id, comments, score, put into all_posts_df and post_df
+            #I need title, id, comments, score, put into posts_df
             print('Posts: ' + submission.title)
             submission.comments.replace_more(limit=3) #Need to change limit
             # submission.comments.replace_more(limit=None)
@@ -30,7 +30,7 @@ for submission in wsb.search('Daily Discussion Thread for', sort='new', time_fil
                 'score':submission.score,
                 'top_level_comments': list(submission.comments)
             }, ignore_index=True)
-
+posts_df.to_pickle(WSB_Posts)
 posts_df.to_csv(r'posts.csv', mode = 'w')
 
 comments_df = pd.DataFrame()
@@ -43,5 +43,5 @@ for post in posts_df.itertuples():
             'body':comment.body,
             'score':comment.score
         }, ignore_index=True)
-
+comments_df.to_pickle(WSB_Comments)
 comments_df.to_csv(r'comments.csv', mode = 'w')
