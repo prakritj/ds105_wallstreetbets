@@ -19,9 +19,10 @@ posts_df = pd.DataFrame()
 wsb = reddit.subreddit('wallstreetbets')
 for submission in wsb.search('Daily Discussion Thread for', sort='new', time_filter='all', limit=500):
     if 'Daily Discussion Thread for ' in submission.title:
-        if (submission.created_utc > unix_start && submission.created_utc < unix_end): #need to check whether the post is within our two week window
+        if submission.created_utc >= unix_start and submission.created_utc <= unix_end: #need to check whether the post is within our two week window
             #I need title, id, comments, score, put into all_posts_df and post_df
             print('Posts: ' + submission.title)
+            submission.comments.replace_more(limit=None)
             posts_df = posts_df.append({
                 'id':submission.id,
                 'title':submission.title,
@@ -32,7 +33,7 @@ for submission in wsb.search('Daily Discussion Thread for', sort='new', time_fil
 posts_df.to_csv(r'posts.csv', mode = 'w')
 
 comments_df = pd.DataFrame()
-for post in all_posts_df.itertuples():
+for post in posts_df.itertuples():
     print('Comments: ' + post.title)
     for comment in post.top_level_comments:
         comments_df = comments_df.append({
