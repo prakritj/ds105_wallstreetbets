@@ -18,7 +18,7 @@ unix_end = time.mktime(end_date.timetuple())
 posts_df = pd.DataFrame()
 wsb = reddit.subreddit('wallstreetbets')
 for submission in wsb.search('Daily Discussion Thread for', sort='new', time_filter='all', limit=1000):
-    if 'Daily Discussion Thread for ' in submission.title and 'unpinned' not in submission.title:
+    if 'Daily Discussion Thread for ' in submission.title and 'Unpinned' not in submission.title:
         if submission.created_utc >= unix_start and submission.created_utc <= unix_end: #need to check whether the post is within our two week window
             #I need title, id, comments, score, put into posts_df
             print('Posts: ' + submission.title)
