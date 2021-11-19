@@ -11,8 +11,8 @@ reddit = praw.Reddit(
     username="ds105_WSB",
 )
 
-start_date = datetime.date(2021,7,17)
-end_date = datetime.date(2021,7,31)
+start_date = datetime.date(2021,1,1)
+end_date = datetime.date(2021,6,30)
 unix_start = time.mktime(start_date.timetuple())
 unix_end = time.mktime(end_date.timetuple())
 posts_df = pd.DataFrame()
@@ -22,7 +22,8 @@ for submission in wsb.search('Daily Discussion Thread for', sort='new', time_fil
         if submission.created_utc >= unix_start and submission.created_utc <= unix_end: #need to check whether the post is within our two week window
             #I need title, id, comments, score, put into all_posts_df and post_df
             print('Posts: ' + submission.title)
-            submission.comments.replace_more(limit=None)
+            submission.comments.replace_more(limit=3) #Need to change limit
+            # submission.comments.replace_more(limit=None)
             posts_df = posts_df.append({
                 'id':submission.id,
                 'title':submission.title,
