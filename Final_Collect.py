@@ -45,8 +45,8 @@ wsb_function('01/01/2021', '01/07/2021', 'March', posts)
 wsb_function('01/01/2021', '01/07/2021', 'April', posts)
 wsb_function('01/01/2021', '01/07/2021', 'May', posts)
 wsb_function('01/01/2021', '01/07/2021', 'June', posts)
-posts_df.to_pickle('WSB_Posts')
-posts_df.to_csv(r'posts.csv', mode = 'w')
+posts.to_pickle('WSB_Posts')
+posts.to_csv(r'posts.csv', mode = 'w')
 
 # comments_df = pd.DataFrame()
 # for post in posts_df.itertuples():
