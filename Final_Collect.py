@@ -28,9 +28,10 @@ for submission in wsb.search('Daily Discussion Thread for '+ 'June', sort='new',
             #I need title, id, comments, score, put into posts_df
             print('Posts: ' + submission.title)
             try:
-                submission.comments.replace_more(limit=3) #Need to change limit
+                submission.comments.replace_more(limit=3)
             except:
                 print('Error: Unable to Replace More Comments')
+                submission.comments.replace_more(limit=0)
                 pass
             # submission.comments.replace_more(limit=None)
             posts_df = posts_df.append({
@@ -48,9 +49,10 @@ for submission in wsb.search('Daily Discussion Thread for '+ 'May', sort='new', 
             #I need title, id, comments, score, put into posts_df
             print('Posts: ' + submission.title)
             try:
-                submission.comments.replace_more(limit=3) #Need to change limit
+                submission.comments.replace_more(limit=3)
             except:
                 print('Error: Unable to Replace More Comments')
+                submission.comments.replace_more(limit=0)
                 pass
             # submission.comments.replace_more(limit=None)
             posts_df = posts_df.append({
@@ -68,9 +70,10 @@ for submission in wsb.search('Daily Discussion Thread for '+ 'April', sort='new'
             #I need title, id, comments, score, put into posts_df
             print('Posts: ' + submission.title)
             try:
-                submission.comments.replace_more(limit=3) #Need to change limit
+                submission.comments.replace_more(limit=3)
             except:
                 print('Error: Unable to Replace More Comments')
+                submission.comments.replace_more(limit=0)
                 pass
             # submission.comments.replace_more(limit=None)
             posts_df = posts_df.append({
@@ -88,9 +91,10 @@ for submission in wsb.search('Daily Discussion Thread for '+ 'March', sort='new'
             #I need title, id, comments, score, put into posts_df
             print('Posts: ' + submission.title)
             try:
-                submission.comments.replace_more(limit=3) #Need to change limit
+                submission.comments.replace_more(limit=3)
             except:
                 print('Error: Unable to Replace More Comments')
+                submission.comments.replace_more(limit=0)
                 pass
             # submission.comments.replace_more(limit=None)
             posts_df = posts_df.append({
@@ -108,9 +112,10 @@ for submission in wsb.search('Daily Discussion Thread for '+ 'February', sort='n
             #I need title, id, comments, score, put into posts_df
             print('Posts: ' + submission.title)
             try:
-                submission.comments.replace_more(limit=3) #Need to change limit
+                submission.comments.replace_more(limit=3)
             except:
                 print('Error: Unable to Replace More Comments')
+                submission.comments.replace_more(limit=0)
                 pass
             # submission.comments.replace_more(limit=None)
             posts_df = posts_df.append({
@@ -128,9 +133,10 @@ for submission in wsb.search('Daily Discussion Thread for '+ 'January', sort='ne
             #I need title, id, comments, score, put into posts_df
             print('Posts: ' + submission.title)
             try:
-                submission.comments.replace_more(limit=3) #Need to change limit
+                submission.comments.replace_more(limit=3)
             except:
                 print('Error: Unable to Replace More Comments')
+                submission.comments.replace_more(limit=0)
                 pass
             # submission.comments.replace_more(limit=None)
             posts_df = posts_df.append({
