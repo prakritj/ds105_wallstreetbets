@@ -48,15 +48,15 @@ wsb_function('01/01/2021', '01/07/2021', 'June', posts)
 posts.to_pickle('WSB_Posts')
 posts.to_csv(r'posts.csv', mode = 'w')
 
-# comments_df = pd.DataFrame()
-# for post in posts_df.itertuples():
-#     print('Comments: ' + post.title)
-#     for comment in post.top_level_comments:
-#         comments_df = comments_df.append({
-#             'id':comment.id,
-#             'post_id':comment.link_id,
-#             'body':comment.body,
-#             'score':comment.score
-#         }, ignore_index=True)
-# comments_df.to_pickle('WSB_Comments')
-# comments_df.to_csv(r'comments.csv', mode = 'w')
+comments_df = pd.DataFrame()
+for post in posts_df.itertuples():
+    print('Comments: ' + post.title)
+    for comment in post.top_level_comments:
+        comments_df = comments_df.append({
+            'id':comment.id,
+            'post_id':comment.link_id,
+            'body':comment.body,
+            'score':comment.score
+        }, ignore_index=True)
+comments_df.to_pickle('WSB_Comments')
+comments_df.to_csv(r'comments.csv', mode = 'w')
