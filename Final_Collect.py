@@ -49,7 +49,7 @@ posts.to_pickle('WSB_Posts')
 posts.to_csv(r'posts.csv', mode = 'w')
 
 comments_df = pd.DataFrame()
-for post in posts_df.itertuples():
+for post in posts.itertuples():
     print('Comments: ' + post.title)
     for comment in post.top_level_comments:
         comments_df = comments_df.append({
