@@ -1,0 +1,14 @@
+# List the start up tasks. Learn more https://www.gitpod.io/docs/config-start-tasks/
+tasks:
+  - init: |
+      echo 'pip install praw'
+      echo 'pip install nltk'
+      echo 'pip install pandas'
+      echo 'pip install numpy'
+      echo 'pip install pickle'
+    
+
+# List the ports to expose. Learn more https://www.gitpod.io/docs/config-ports/
+# ports:
+#   - port: 3000
+#     onOpen: open-preview

@@ -60,3 +60,4 @@ for dirty in ticker_df.itertuples():
         }, ignore_index=True)
 clean_tickers_df.sort_values(by='score', inplace=True,ascending=False)
 clean_tickers_df.to_csv(r'clean_tickers.csv')
+clean_tickers_df.to_pickle('clean_tickers.pickle')
