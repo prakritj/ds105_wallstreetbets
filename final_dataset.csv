@@ -1,0 +1,24 @@
+,ticker,frequency,Industry,score
+0,GME,7554,Consumer Cyclical,360351
+1,AMC,5879,Communication Services,206158
+2,PLTR,4992,Technology,90611
+3,NOK,936,Technology,44803
+4,SNDL,1252,Healthcare,37284
+5,WISH,1826,Consumer Cyclical,35522
+6,TSLA,2119,Consumer Cyclical,30824
+7,CLOV,1544,Healthcare,28758
+8,MVIS,1303,Technology,27584
+9,CLNE,1373,Energy,26641
+10,TLRY,1311,Healthcare,23135
+11,UWMC,981,Financial Services,14844
+12,AAPL,949,Technology,13625
+13,RKT,918,Financial Services,13028
+14,WKHS,655,Consumer Cyclical,10360
+15,NIO,585,Consumer Cyclical,8015
+16,EDIT,42,Healthcare,7129
+17,CLF,471,Basic Materials,7090
+18,AMD,629,Technology,6643
+19,SPCE,440,Industrials,6017
+20,CRSR,288,Technology,5124
+21,ASO,399,Consumer Cyclical,5019
+22,OCGN,323,Healthcare,4981
