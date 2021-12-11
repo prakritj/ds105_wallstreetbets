@@ -8,9 +8,11 @@ tasks:
       pip install pickle
       pip install matplotlib
       pip install yfinance
-    
+  - command: python3 -m http.server 8000
+    name: webserver
 
+    
 # List the ports to expose. Learn more https://www.gitpod.io/docs/config-ports/
-# ports:
-#   - port: 3000
+ ports:
+   - port: 8000
 #     onOpen: open-preview
