@@ -21,8 +21,12 @@
         .defer(d3.csv, "final_dataset.csv")
         .await(ready)
     
-    function ready (error, datapoints) {
+    var toolTip = d3.select('body')
+        .append('div')
+        .attr('id', 'tooltip')
+        .attr('style', 'position: absolute; opacity: 0;');
 
+    function ready (error, datapoints) {
         var circles = svg.selectAll(".ticker")
             .data(datapoints)
             .enter().append("circle")
@@ -30,8 +34,29 @@
             .attr("r", function(d) {
                 return radiusScale(d.score)
             })
-            .attr("fill", "lightblue")
-        
+            .attr("fill", function(d) {
+                if (d.Industry == 'Consumer Cyclical') {return "darkblue"}
+                if (d.Industry == 'Communication Services') {return "lightblue"}
+                if (d.Industry == 'Technology') {return "lightgreen"}
+                if (d.Industry == 'Healthcare') {return "red"}
+                if (d.Industry == 'Energy') {return "darkgreen"}
+                if (d.Industry == 'Financial Services') {return "pink"}
+                if (d.Industry == 'Basic Materials') {return "gray"}
+                if (d.Industry == 'Industrials') {return "black"}
+            })
+            .on('mouseover', function (d) {
+                d3.select('#tooltip')
+                    .transition()
+                    .duration(200)
+                    .style('opacity', 1);
+
+                d3.select('#tooltip').html(d.ticker + "<br>" + "Industry: " + d.Industry + "<br/>" + "Score: " + d.score)
+                    .style("left", d3.event.pageX + "px")
+                    .style("top", "10px")
+            })
+            .on('mouseout', function () {
+                d3.select('#tooltip').style('opacity', 0)
+            })
         simulation.nodes(datapoints)
             .on('tick', ticked)
         
@@ -44,6 +69,9 @@
                     return d.y
                 })
         }
+
+    circles.append("text")
+        .text(function(d) {return d.ticker})
     
     }
 })();
