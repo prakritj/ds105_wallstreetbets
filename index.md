@@ -1,4 +1,3 @@
-<!-- Custom JavaScript files set in YAML front matter -->
-{% for js in page.customjs %}
-<script async type="text/javascript" src="{{visualisation.js}}"></script>
-{% endfor %}
+<div id = "chart"></div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.2.2/d3.min.js"></script>
+<script src="visualisation.js"></script>
