@@ -52,7 +52,7 @@
 
                 d3.select('#tooltip').html(d.ticker + "<br>" + "Industry: " + d.Industry + "<br/>" + "Score: " + d.score)
                     .style("left", d3.event.pageX + "px")
-                    .style("top", "10px")
+                    .style("center", "10px")
             })
             .on('mouseout', function () {
                 d3.select('#tooltip').style('opacity', 0)
