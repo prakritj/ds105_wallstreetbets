@@ -55,18 +55,17 @@ After this, we were able to easily store our data in Pandas Dataframes, a 2-D ta
 **Statistical Summary**
 *how many comments collected, how many posts collected, total upvotes, average upvotes, etc.*
 
-<p align="center">
-  |  | **Count** |
-  | --- | ---: |
-  | **Posts** | 130 |
-  | **Total Posts Score** | 178,323 |
-  | **Average Post Score** | 1,372 |
-  | **Total Comments** | 3,597,073 |
-  | **Average Comments per Post** | 27,670 |
-  | **Comments Pulled** | 92,379 | 
-  | **Total Score of Comments Pulled** | 2,202,633 |
-  | **Average Score of Comments Pulled** | 23.84 |
-</p>
+|  | **Count** |
+| --- | ---: |
+| **Posts** | 130 |
+| **Total Posts Score** | 178,323 |
+| **Average Post Score** | 1,372 |
+| **Total Comments** | 3,597,073 |
+| **Average Comments per Post** | 27,670 |
+| **Comments Pulled** | 92,379 | 
+| **Total Score of Comments Pulled** | 2,202,633 |
+| **Average Score of Comments Pulled** | 23.84 |
+
 
 **Sentiment Analysis and Distribution**
 To start off, we wanted to observe how r/WallStreetBets felt about their internet decisions overall, as people often make posts or comments describing their huge losses or gains. To do this, we used the AFINN sentiment lexicon, a list of English words manually rated for valence with an integer between -5 (negative) and +5 (positive). [Corpus Text, 2021](http://corpustext.com/reference/sentiment_afinn.html)
