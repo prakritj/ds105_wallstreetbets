@@ -10,9 +10,11 @@
 
 *talk about context - why is this important, general happenings over the last 12 months that make this important*
 
-Over the last 12 months, there has been a seismic increase in followers of the Reddit community (known as a *subreddit*) [r/WallStreetBets](https://reddit.com/r/wallstreetbets). As a group of retail investors (but each operating on their own accord), these followers collectively invested in stocks on the US market, coordinating through Reddit forums. *carry on about impact on the mainstream financial industry, subscriber growth, how active they are on Reddit, etc.) Cite some articles and data supporting this*
+Over the last 12 months, there has been a seismic increase in followers of the Reddit community (known as a *subreddit*) [r/WallStreetBets](https://reddit.com/r/wallstreetbets). As a group of retail investors (but each operating on their own accord), these followers collectively invested in stocks on the US market, coordinating through Reddit forums. This subreddit has amassed over 11 million followers since its creationg on January 31st 2012, with the vast majority (9.5 million) of these followers arising from WSB's notorious short of the GameStop stock, GME, displaying unprecedented growth for a subreddit this year. With an average of 12000 comments and 500 posts per day, r/WallStreetBets continues to be one of the most active subreddits on the platform long after the GME debacle, and has seemingly been able to influence the stocks prices of [AMC Entertainment Holdings](https://finance.yahoo.com/quote/AMC),[Nokia](https://finance.yahoo.com/quote/NOK/) and [Sundial Growers](https://finance.yahoo.com/quote/SNDL/) to name a few.([Subreddit Stats, 2021](https://subredditstats.com/r/wallstreetbets)) 
 
-*what motivated us* As observers of these trends, we wanted to further understand them for two reasons. Firstly, as a collective group of retail investors, r/WSB was able to rattle the financial industry despite their vast access to financial capital and real-time information acted upon by professionals. Secondly, we saw that many of these investors were pouring their life savings (and significant amounts *show screenshots from r/WSB here*) into many companies advocated for on the platform. These investments are often unconventional, and financial professionals/ratings firms don't share many of the views of the community. The question then is: who's right? Are r/WSB investors throwing their money away or have they proved institutional investors wrong? To answer this, we needed to do a deeper analysis of the r/WSB community, what is being said on these forums, and understand the stocks that they are advocating for to identify patterns and performance trends. *need to expand a bit more on this, with some evidence, etc.*
+*carry on about impact on the mainstream financial industry, subscriber growth, how active they are on Reddit, etc.) Cite some articles and data supporting this* Done? -William
+
+*what motivated us* As observers of these trends, we wanted to further understand them for two reasons. Firstly, as a collective group of retail investors, r/WSB was able to rattle the financial industry despite competing against professionals with access to a vast amount of financial capital and real-time information to act upon. Secondly, we saw that many of these investors were pouring significant amounts, even their life savings ![200k_Loss](https://github.com/prakritj/ds105_wsb/blob/gh-pages/WSB_200k_loss.jpg?raw=true) into many companies advocated for on the platform. These investments are often unconventional, and financial professionals/ratings firms don't share many of the views of the community. The question then is: who's right? Are r/WSB investors throwing their money away or have they proved institutional investors wrong? To answer this, we needed to do a deeper analysis of the r/WSB community, what is being said on these forums, and understand the stocks that they are advocating for to identify patterns and performance trends. *need to expand a bit more on this, with some evidence, etc.*
 
 
 *for the rest of this, I will be more brief and merely provide a basic template*
@@ -22,7 +24,9 @@ Over the last 12 months, there has been a seismic increase in followers of the R
 
 ### What Data do we Want?
 
-*talk about how there are so many posts and comments on r/WSB, it would be difficult to analyse a lot of them. Thus we opted to only analyse comments from daily threads to manage the data, ensure only one datatype (text) which is easy to parse and go through.*
+As with any subreddit, there is a wide variety of posts and comments on r/WallStreetBets including images, gifs and videos. Combined with around 1000 posts per day (during the period that we would be looking at) and the even greater number of comments on those posts, it would be extremely difficult to analyse everything on r/WSB. In the end, we opted to only analyse comments from daily discussion threads, as this is typically the most popular and most active post accounting for the vast majority of comments everyday. Doing this made the process of parsing through and restructuring the data mmuch simpler, as it ensured that we only needed to look at one datatype (text). 
+
+*talk about how there are so many posts and comments on r/WSB, it would be difficult to analyse a lot of them. Thus we opted to only analyse comments from daily threads to manage the data, ensure only one datatype (text) which is easy to parse and go through.* Done? -William
 
 **Time Period**
 
@@ -30,7 +34,9 @@ Based on r/WSB's meteoric rise in the beginning of 2021, we thought it most appr
 
 ### Obtaining Data
 
-We opted to use Python to obtain and analyse data, and used [PRAW](https://praw.readthedocs.io/en/stable/) to get our data from Reddit. It is very straightforward to use, the documentation is elaborate and well-written, and it stores post and comment data in objects with attributes. This made it very easy to store our data in Pandas Dataframes to organise and iterate over them. *need to expand on this*
+We opted to use Python to obtain and analyse data, and used [PRAW](https://praw.readthedocs.io/en/stable/), a wrapper for the reddit API, to get our data from Reddit. Being an API wrapper, it is very straightforward to use compared to dealing with the API mannually, featuring many quality-of-life features such as seeting a request limit of 60 per minute. Furthermore, the documentation is elaborate and well-written, and the wrapper stores post and comment data in objects with attributes. This made it very easy to store our data in Pandas Dataframes, a 2-D tabular data structure, to organise and iterate over them. This is far superior compared to just using the API raw where data is returned in a JSON format which is extremely messy and unncessarily difficult to deal with. 
+
+*need to expand on this* Done? -William
 
 *talk about issue regarding more comments here briefly*.
 
@@ -39,7 +45,17 @@ We opted to use Python to obtain and analyse data, and used [PRAW](https://praw.
 ### Overview
 
 **Statistical Summary**
-*how many comments collected, how many posts collected, total upvotes, average upvotes, etc.
+*how many comments collected, how many posts collected, total upvotes, average upvotes, etc.*
+
+|  | **Count** |
+| **Posts** | 130 |
+| **Total Posts Score** | 178,323 |
+| **Average Post Score** | 1372 |
+| **Total Comments** | 3,597,073 |
+| **Average Comments per Post** | 27,670 |
+| **Comments Pulled** | 92,379 | 
+| **Total Score of Comments Pulled** | 2,202,633 |
+| **Average Score of Comments Pulled** | 23.84 |
 
 **Sentiment Analysis and Distribution**
 
