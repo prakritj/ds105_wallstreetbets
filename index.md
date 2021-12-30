@@ -56,16 +56,16 @@ After this, we were able to easily store our data in Pandas Dataframes, a 2-D ta
 *how many comments collected, how many posts collected, total upvotes, average upvotes, etc.*
 
 <p align="center">
-|  | **Count** |
-| --- | ---: |
-| **Posts** | 130 |
-| **Total Posts Score** | 178,323 |
-| **Average Post Score** | 1,372 |
-| **Total Comments** | 3,597,073 |
-| **Average Comments per Post** | 27,670 |
-| **Comments Pulled** | 92,379 | 
-| **Total Score of Comments Pulled** | 2,202,633 |
-| **Average Score of Comments Pulled** | 23.84 |
+  |  | **Count** |
+  | --- | ---: |
+  | **Posts** | 130 |
+  | **Total Posts Score** | 178,323 |
+  | **Average Post Score** | 1,372 |
+  | **Total Comments** | 3,597,073 |
+  | **Average Comments per Post** | 27,670 |
+  | **Comments Pulled** | 92,379 | 
+  | **Total Score of Comments Pulled** | 2,202,633 |
+  | **Average Score of Comments Pulled** | 23.84 |
 </p>
 
 **Sentiment Analysis and Distribution**
@@ -74,7 +74,7 @@ To start off, we wanted to observe how r/WallStreetBets felt about their interne
 Applying this sentiment analysis, we have found that there is a slightly negative sentiment of -0.35 across comments on average and that the distribution of comment sentiment follows a relatively normal distribution, as shown below.
 
 <p align="center">
-  <img src="https://github.com/prakritj/ds105_wsb/blob/gh-pages/comment_sentiment.JPG?raw=true" height="500">
+  <img src="https://github.com/prakritj/ds105_wsb/blob/gh-pages/comment_sentiment.JPG?raw=true" height="400">
 </p>
 
 It is not surprising that the sentiment is skewed towards the left given the nature of r/WallStreetBets being filled with many posts and comments about losing money relative to posts and comments about making money. However, upon closer inspection of the  sentiment of specific comments picked randomly, we have noticed that the sentiment of comments may be getting measured incorrectly. A few examples are listed below:
