@@ -14,7 +14,9 @@ Over the last 12 months, there has been a seismic increase in followers of the R
 
 *carry on about impact on the mainstream financial industry, subscriber growth, how active they are on Reddit, etc.) Cite some articles and data supporting this* Done? -William
 
-*what motivated us* As observers of these trends, we wanted to further understand them for two reasons. Firstly, as a collective group of retail investors, r/WSB was able to rattle the financial industry despite competing against professionals with access to a vast amount of financial capital and real-time information to act upon. Secondly, we saw that many of these investors were pouring significant amounts, even their life savings ![200k_Loss](https://github.com/prakritj/ds105_wsb/blob/gh-pages/WSB_200k_loss.jpg?raw=true) into many companies advocated for on the platform. These investments are often unconventional, and financial professionals/ratings firms don't share many of the views of the community. The question then is: who's right? Are r/WSB investors throwing their money away or have they proved institutional investors wrong? To answer this, we needed to do a deeper analysis of the r/WSB community, what is being said on these forums, and understand the stocks that they are advocating for to identify patterns and performance trends. *need to expand a bit more on this, with some evidence, etc.*
+*what motivated us* As observers of these trends, we wanted to further understand them for two reasons. Firstly, as a collective group of retail investors, r/WSB was able to rattle the financial industry despite competing against professionals with access to a vast amount of financial capital and real-time information to act upon. Secondly, we saw that many of these investors were pouring significant amounts, even their life savings 
+<img src="https://github.com/prakritj/ds105_wsb/blob/gh-pages/WSB_200k_loss.jpg?raw=true" height="300">
+into many companies advocated for on the platform. These investments are often unconventional, and financial professionals/ratings firms don't share many of the views of the community. The question then is: who's right? Are r/WSB investors throwing their money away or have they proved institutional investors wrong? To answer this, we needed to do a deeper analysis of the r/WSB community, what is being said on these forums, and understand the stocks that they are advocating for to identify patterns and performance trends. *need to expand a bit more on this, with some evidence, etc.*
 
 
 *for the rest of this, I will be more brief and merely provide a basic template*
@@ -48,10 +50,10 @@ We opted to use Python to obtain and analyse data, and used [PRAW](https://praw.
 *how many comments collected, how many posts collected, total upvotes, average upvotes, etc.*
 
 |  | **Count** |
-| --- | --- |
+| --- | ---: |
 | **Posts** | 130 |
 | **Total Posts Score** | 178,323 |
-| **Average Post Score** | 1372 |
+| **Average Post Score** | 1,372 |
 | **Total Comments** | 3,597,073 |
 | **Average Comments per Post** | 27,670 |
 | **Comments Pulled** | 92,379 | 
