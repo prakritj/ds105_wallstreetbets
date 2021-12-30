@@ -48,6 +48,7 @@ We opted to use Python to obtain and analyse data, and used [PRAW](https://praw.
 *how many comments collected, how many posts collected, total upvotes, average upvotes, etc.*
 
 |  | **Count** |
+| --- | --- |
 | **Posts** | 130 |
 | **Total Posts Score** | 178,323 |
 | **Average Post Score** | 1372 |
