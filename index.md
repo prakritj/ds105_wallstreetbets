@@ -10,14 +10,14 @@
 
 *talk about context - why is this important, general happenings over the last 12 months that make this important*
 
-Over the last 12 months, there has been a seismic increase in followers of the Reddit community (known as a *subreddit*) [r/WallStreetBets](https://reddit.com/r/wallstreetbets). As a group of retail investors (but each operating on their own accord), these followers collectively invested in stocks on the US market, coordinating through Reddit forums. This subreddit has amassed over 11 million followers since its creationg on January 31st 2012, with the vast majority (9.5 million) of these followers arising from WSB's notorious short of the GameStop stock, GME, displaying unprecedented growth for a subreddit this year. With an average of 12000 comments and 500 posts per day, r/WallStreetBets continues to be one of the most active subreddits on the platform long after the GME debacle, and has seemingly been able to influence the stocks prices of [AMC Entertainment Holdings](https://finance.yahoo.com/quote/AMC),[Nokia](https://finance.yahoo.com/quote/NOK/) and [Sundial Growers](https://finance.yahoo.com/quote/SNDL/) to name a few.([Subreddit Stats, 2021](https://subredditstats.com/r/wallstreetbets)) 
+Over the last 12 months, there has been a seismic increase in followers of the Reddit community (known as a *subreddit*) [r/WallStreetBets](https://reddit.com/r/wallstreetbets). As a group of retail investors (but each operating on their own accord), these followers collectively invested in stocks on the US market, coordinating through Reddit forums. This subreddit has amassed over 11 million followers since its creationg on January 31st 2012, with the vast majority (9.5 million) of these followers arising from WSB's notorious short of the GameStop stock, GME, displaying unprecedented growth for a subreddit this year. With an average of 12000 comments and 500 posts per day, r/WallStreetBets continues to be one of the most active subreddits on the platform long after the GME debacle, and has seemingly been able to influence the stocks prices of [AMC Entertainment Holdings](https://finance.yahoo.com/quote/AMC), [Nokia](https://finance.yahoo.com/quote/NOK/) and [Sundial Growers](https://finance.yahoo.com/quote/SNDL/) to name a few.([Subreddit Stats, 2021](https://subredditstats.com/r/wallstreetbets)) 
 
 *carry on about impact on the mainstream financial industry, subscriber growth, how active they are on Reddit, etc.) Cite some articles and data supporting this* Done? -William
 
 *what motivated us* As observers of these trends, we wanted to further understand them for two reasons. Firstly, as a collective group of retail investors, r/WSB was able to rattle the financial industry despite competing against professionals with access to a vast amount of financial capital and real-time information to act upon. Secondly, we saw that many of these investors were pouring significant amounts, even their life savings 
 
 <p align="center">
-<img src="https://github.com/prakritj/ds105_wsb/blob/gh-pages/WSB_200k_loss.jpg?raw=true" height="500">
+  <img src="https://github.com/prakritj/ds105_wsb/blob/gh-pages/WSB_200k_loss.jpg?raw=true" height="500">
 </p>
   
 into many companies advocated for on the platform. These investments are often unconventional, and financial professionals/ratings firms don't share many of the views of the community. The question then is: who's right? Are r/WSB investors throwing their money away or have they proved institutional investors wrong? To answer this, we needed to do a deeper analysis of the r/WSB community, what is being said on these forums, and understand the stocks that they are advocating for to identify patterns and performance trends. *need to expand a bit more on this, with some evidence, etc.*
@@ -40,7 +40,9 @@ Based on r/WSB's meteoric rise in the beginning of 2021, we thought it most appr
 
 ### Obtaining Data
 
-We opted to use Python to obtain and analyse data, and used [PRAW](https://praw.readthedocs.io/en/stable/), a wrapper for the reddit API, to get our data from Reddit. Being an API wrapper, it is very straightforward to use compared to dealing with the API mannually, featuring many quality-of-life features such as seeting a request limit of 60 per minute. Furthermore, the documentation is elaborate and well-written, and the wrapper stores post and comment data in objects with attributes. This made it very easy to store our data in Pandas Dataframes, a 2-D tabular data structure, to organise and iterate over them. This is far superior compared to just using the API raw where data is returned in a JSON format which is extremely messy and unncessarily difficult to deal with. 
+We opted to use Python to obtain and analyse data, and used [PRAW](https://praw.readthedocs.io/en/stable/), a wrapper for the reddit API, to get our data from Reddit. Being an API wrapper, it is very straightforward to use compared to dealing with the API mannually, featuring many quality-of-life features such as automatically setting a request limit of 60 per minute. Furthermore, the documentation is elaborate and well-written, and the wrapper stores post and comment data in objects with attributes. This is far superior compared to just using the API raw where data is returned in a JSON format which is extremely messy and unncessarily difficult to deal with. 
+
+After this, we were able to easily store our data in Pandas Dataframes, a 2-D tabular data structure faster and more efficent than Python's default lists, dictionaries and arrays, to organise and iterate over them. 
 
 *need to expand on this* Done? -William
 
@@ -65,9 +67,29 @@ We opted to use Python to obtain and analyse data, and used [PRAW](https://praw.
 | **Average Score of Comments Pulled** | 23.84 |
 
 **Sentiment Analysis and Distribution**
+To start off, we wanted to observe how r/WallStreetBets felt about their internet decisions overall, as people often make posts or comments describing their huge losses or gains. To do this, we used the AFINN sentiment lexicon, a list of English words manually rated for valence with an integer between -5 (negative) and +5 (positive). [Corpus Text, 2021](http://corpustext.com/reference/sentiment_afinn.html)
 
-*It is no surprise that sentiment is skewed towards the left, with a mean of -0.35 - but it is still follows a relatively normal distribution. Generally the internet is quite a negative place after all*
-*We ran this in comparison with an AFINN Dict - acknowledge limitations that it is not the most fitting for social media*
+Applying this sentiment analysis, we have found that there is a slightly negative sentiment of -0.35 across comments on average and that the distribution of comment sentiment follows a relatively normal distribution, as shown below.
+
+<p align="center">
+  <img src="https://github.com/prakritj/ds105_wsb/blob/gh-pages/comment_sentiment.jpg?raw=true" height="500">
+</p>
+
+It is not surprising that the sentiment is skewed towards the left given the nature of r/WallStreetBets being filled with many posts and comments about losing money relative to posts and comments about making money. However, upon closer inspection of the  sentiment of specific comments picked randomly, we have noticed that the sentiment of comments may be getting measured incorrectly. A few examples are listed below:
+
+- "GME and AMC to the moon" - Sentiment Score: 0
+- "Reddit's EFT is on FIRE, GME 151%, BB 13% (w.e. but still), AMC 300%, LOOK AT US WE'RE THE HEDGE MANAGER NOW." - Sentiment Score: -2
+- "Daily popular ticker thread words great. Instead of 165 tickers getting spammed by bag holders in the daily it's only 162, much more manageable". - Sentiment Score: 6
+
+In the first comment, "to the moon" is a common phrase used by r/WallStreetBets redditors to show their support for a certain stock and reflects a positive sentiment, which isn't captured by the AFINN dictionary. In the second comment, the commenter is very positive about the gains in GME, BB and AMC, yet AFINN sentiment analysis believes that it has negative sentiment.
+Lastly, in the third comment sarcasm is used so the AFINN dictionary is mislead into deeming that comment has positive sentiment.
+
+This shows that there are limitations to using the AFINN lexicon to accurately measure the sentiment of r/WallStreetBets comments. This is in part to due the dictionary of words not being tailored to the words or phrases used on social media. Another limitation comes from using sentiment analysis based on words alone rather than phrases or entire sentences.
+
+On a longer timescale, we may have been able to produce our own custom dictionary for words use on r/WallStreetBets to more accurately capture sentiment. Furthermore, there may be the potential to use machine learning to better capture the sentiment of whole phrases and sentiments by using services such as the [Natural Langauge Understanding AI](https://www.ibm.com/uk-en/cloud/watson-natural-language-understanding) by IBM.
+
+*It is no surprise that sentiment is skewed towards the left, with a mean of -0.35 - but it is still follows a relatively normal distribution. Generally the internet is quite a negative place after all* 
+*We ran this in comparison with an AFINN Dict - acknowledge limitations that it is not the most fitting for social media* -Done? William
 
 **Reading Level Analysis**
 
