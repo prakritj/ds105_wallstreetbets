@@ -8,8 +8,6 @@
 
 ## Context
 
-*talk about context - why is this important, general happenings over the last 12 months that make this important*
-
 Over the last 12 months, there has been a seismic increase in followers of the Reddit community (known as a *subreddit*) [r/WallStreetBets](https://reddit.com/r/wallstreetbets) (henceforth referred to as r/WSB). As a group of retail investors (but each operating on their own accord), these followers collectively invested in stocks on the US market, coordinating through Reddit forums. This subreddit has amassed over 11 million followers since its creation on January 31st 2012, with the vast majority (9.5 million) having joined in 2021. 
 
 |Number of Followers (Members) to Reddit community r/wallstreetbets: A rapid increase since 2021|
@@ -22,30 +20,19 @@ The craze behind GameStop was not isolated. r/WSB had indulged in several other 
 
 And thus we wanted to know: Who's right? Are r/WSB investors throwing their money away or have they proved institutional investors wrong? Are they sensible or irrational? To answer this, we needed to do a deeper analysis of the r/WSB community, to understand what is being said on these forums and the stocks that they are advocating for to identify patterns and performance trends.
 
-
-*carry on about impact on the mainstream financial industry, subscriber growth, how active they are on Reddit, etc.) Cite some articles and data supporting this* Done? -William
-
-*what motivated us* 
-
-
 |Redditors have invested vast sums based on advice from r/WSB|
 |:--:| 
 |![Image2](https://github.com/prakritj/ds105_wsb/blob/gh-pages/PNG%20image.png)|
 
-
-
-*for the rest of this, I will be more brief and merely provide a basic template*
 ## Getting our Data
 
-*Julio said that adding code can make it confusing so we should try to make this as simple as possible while covering enough bases*
+To analyse data from r/WSB, the natural first step would be to retrieve this from Reddit. However, due to the nature of social media posts and comments, as well as the vastness of these forums, we had to carefully choose our set of data to analyse before we and our machines get overwhelmed.
 
 ### What Data do we Want?
 
-As with any subreddit, there is a wide variety of posts and comments on r/WallStreetBets including images, gifs and videos. Combined with around 1000 posts per day (during the period that we would be looking at) and the even greater number of comments on those posts, it would be extremely difficult to analyse everything on r/WSB. In the end, we opted to only analyse comments from daily discussion threads, as this is typically the most popular and most active post accounting for the vast majority of comments everyday. Doing this made the process of parsing through and restructuring the data mmuch simpler, as it ensured that we only needed to look at one datatype (text). 
+As with any subreddit, there is a wide variety of posts and comments on r/WallStreetBets, including images, gifs and videos. Around 1000 submissions were posted per day on r/WSB in 2021, and each submission contained several thousand comments. The numbers add up quick. 
 
-*talk about how there are so many posts and comments on r/WSB, it would be difficult to analyse a lot of them. Thus we opted to only analyse comments from daily threads to manage the data, ensure only one datatype (text) which is easy to parse and go through.* Done? -William
-
-Initially, With an average of 12000 comments and 500 posts per day, r/WallStreetBets continues to be one of the most active subreddits on the platform long after the GME debacle, and has seemingly been able to influence the stocks prices of (https://subredditstats.com/r/wallstreetbets)) 
+To limit our dataset to a manageable size while covering discussions during a decently lengthy period, we opted to only analyse comments from daily discussion threads. Since comments on Reddit were only text (at the time of our analysis), this made it much simpler to use commonly applicable text analysis techniques to our data. Additionally, these posts have a significant number of comments (~10,000) each day. We would still have plenty of data to work with.
 
 **Time Period**
 
@@ -53,13 +40,11 @@ Based on r/WSB's meteoric rise in the beginning of 2021, we thought it most appr
 
 ### Obtaining Data
 
-We opted to use Python to obtain and analyse data, and used [PRAW](https://praw.readthedocs.io/en/stable/), a wrapper for the reddit API, to get our data from Reddit. Being an API wrapper, it is very straightforward to use compared to dealing with the API mannually, featuring many quality-of-life features such as automatically setting a request limit of 60 per minute. Furthermore, the documentation is elaborate and well-written, and the wrapper stores post and comment data in objects with attributes. This is far superior compared to just using the API raw where data is returned in a JSON format which is extremely messy and unncessarily difficult to deal with. 
+We opted to use Python to obtain and analyse data, and used [PRAW](https://praw.readthedocs.io/en/stable/), a wrapper for the Reddit API, to get our data from Reddit. PRAW is extremely easy to use, automatically handling request limits while following all of Reddit's API rules (and thus not jeopardising our Reddit Dev account). The documentation is elaborate and well-written. Most conveniently, PRAW stores post and comment data in objects with attributes, allowing us to easily store and manipulate them later on without losing or cluttering our datasets. We then stored these objects in Pandas Dataframes so we could easily organise, filter, and iterate over them.
 
-After this, we were able to easily store our data in Pandas Dataframes, a 2-D tabular data structure faster and more efficent than Python's default lists, dictionaries and arrays, to organise and iterate over them. 
+**Too Many Comments**
 
-*need to expand on this* Done? -William
-
-*talk about issue regarding more comments here briefly*.
+One limitation
 
 ## Analysing our Data
 
