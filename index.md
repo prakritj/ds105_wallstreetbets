@@ -70,16 +70,15 @@ Noteworthy is the high activity on these forums. 27,670 comments per day were po
 
 **Sentiment Analysis and Distribution**
 
-To get an overview of the opinions and emotions that people were expressing on Reddit, we ran a sentiment analysis comparing our dataset of r/WSB comments with the popular AFINN Sentiment Lexicon. The AFINN Lexicon is a dictionary of a couple thouand English words rated by linguici for valence with an integer between -5 (negative) and +5 (positive).
+To get an overview of the opinions and emotions that people were expressing on Reddit, we ran a sentiment analysis comparing our dataset of r/WSB comments with the popular AFINN Sentiment Lexicon. The AFINN Lexicon is a dictionary of a couple thousand English words rated for valence with an integer between -5 (negative) and +5 (positive).
 
-
-To start off, we wanted to observe how r/WallStreetBets felt about their internet decisions overall, as people often make posts or comments describing their huge losses or gains.  [Corpus Text, 2021](http://corpustext.com/reference/sentiment_afinn.html)
-
-Applying this sentiment analysis, we have found that there is a slightly negative sentiment of -0.35 across comments on average and that the distribution of comment sentiment follows a relatively normal distribution, as shown below.
+The averaage comment sentiment was -0.35, however the median and mode were 0 - thus, the distribution of comment sentiment was negatively skewed, as shown below.
 
 <p align="center">
   <img src="https://github.com/prakritj/ds105_wsb/blob/gh-pages/comment_sentiment.JPG?raw=true" height="400">
 </p>
+
+Considering the negativity of the internet in general, it was not surprising to us 
 
 It is not surprising that the sentiment is skewed towards the left given the nature of r/WallStreetBets being filled with many posts and comments about losing money relative to posts and comments about making money. However, upon closer inspection of the  sentiment of specific comments picked randomly, we have noticed that the sentiment of comments may be getting measured incorrectly. A few examples are listed below:
 
