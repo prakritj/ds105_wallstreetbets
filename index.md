@@ -30,7 +30,7 @@ And thus we wanted to know: Who's right? Are r/WSB investors throwing their mone
 
 |Redditors have invested vast sums based on advice from r/WSB|
 |:--:| 
-|![Image1](https://github.com/prakritj/ds105_wsb/blob/gh-pages/PNG%20image.png)|
+|![Image2](https://github.com/prakritj/ds105_wsb/blob/gh-pages/PNG%20image.png)|
 
 
 
