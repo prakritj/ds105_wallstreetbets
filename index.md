@@ -44,14 +44,17 @@ We opted to use Python to obtain and analyse data, and used [PRAW](https://praw.
 
 **Too Many Comments**
 
-One limitation
+One limitation with Reddit's API (and, by extension, PRAW) is the way it retrieves comments from these posts. Rather than extracting them all at once, it only generates the top few by default. The rest are nested in `more_comments` instances, something similar to the 'load more comments' button you might see on the Reddit website. To replace these `more_comments` instances with actual comments, however, is extremely time intensive due to the sheer number of comments we were dealing with and the limitations on number of requests imposed by the API. As a result, our data doesn't include all comments during our time period, but only the top few which were automatically returned by the API. Since these comments were those which were most popular (and received more upvotes), we believe this has a limited impact on our analysis. 
 
 ## Analysing our Data
 
 ### Overview
 
 **Statistical Summary**
-*how many comments collected, how many posts collected, total upvotes, average upvotes, etc.*
+
+In our 180 day period, we went through 130 posts - these Daily Discussion Threads were not posted on weekends. Despite not being able to retrieve all comments, we still pulled 92,379 comments out of a total of 3.5 million. These comments amassed more than 2 million upvotes, with an average score of 23.84 (score being upvotes - downvotes).
+
+Noteworthy is the high activity on these forums. 27,670 comments per day were posted on these discussion threads alone. The 2+ million upvotes on comments during this period indicates a high level of engagement with these comments. There is a significant amount of content regularly submitted on r/WSB, even on working days when these threads are active.   
 
 |  | **Count** |
 | --- | ---: |
@@ -66,7 +69,11 @@ One limitation
 
 
 **Sentiment Analysis and Distribution**
-To start off, we wanted to observe how r/WallStreetBets felt about their internet decisions overall, as people often make posts or comments describing their huge losses or gains. To do this, we used the AFINN sentiment lexicon, a list of English words manually rated for valence with an integer between -5 (negative) and +5 (positive). [Corpus Text, 2021](http://corpustext.com/reference/sentiment_afinn.html)
+
+To get an overview of the opinions and emotions that people were expressing on Reddit, we ran a sentiment analysis comparing our dataset of r/WSB comments with the popular AFINN Sentiment Lexicon. The AFINN Lexicon is a dictionary of a couple thouand English words rated by linguici for valence with an integer between -5 (negative) and +5 (positive).
+
+
+To start off, we wanted to observe how r/WallStreetBets felt about their internet decisions overall, as people often make posts or comments describing their huge losses or gains.  [Corpus Text, 2021](http://corpustext.com/reference/sentiment_afinn.html)
 
 Applying this sentiment analysis, we have found that there is a slightly negative sentiment of -0.35 across comments on average and that the distribution of comment sentiment follows a relatively normal distribution, as shown below.
 
