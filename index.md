@@ -27,9 +27,11 @@ And thus we wanted to know: Who's right? Are r/WSB investors throwing their mone
 
 *what motivated us* 
 
-<p align="center">
-  <img src="https://github.com/prakritj/ds105_wsb/blob/gh-pages/WSB_200k_loss.jpg?raw=true" height="500">
-</p>
+
+|Redditors have invested vast sums based on advice from r/WSB|
+|:--:| 
+|![Image1](https://github.com/prakritj/ds105_wsb/blob/gh-pages/PNG%20image.png)|
+
 
 
 *for the rest of this, I will be more brief and merely provide a basic template*
