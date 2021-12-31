@@ -12,9 +12,16 @@
 
 Over the last 12 months, there has been a seismic increase in followers of the Reddit community (known as a *subreddit*) [r/WallStreetBets](https://reddit.com/r/wallstreetbets) (henceforth referred to as r/WSB). As a group of retail investors (but each operating on their own accord), these followers collectively invested in stocks on the US market, coordinating through Reddit forums. This subreddit has amassed over 11 million followers since its creation on January 31st 2012, with the vast majority (9.5 million) having joined in 2021. 
 
+|Number of Followers (Members) to Reddit community r/wallstreetbets: A rapid increase since 2021|
+|:--:| 
+|![Image1](https://i.ibb.co/cx5jTqq/newplot.png)|
+
 Since the recent surge in followers, r/WSB has taken interest in many high- and low-profile stocks. Initially (and most famously), they advocated for investments in [GameStop](https://finance.yahoo.com/quote/GME). As a brick-and-mortar retailer of gaming electronics and merchandise, the company seemed destined for failure. Institutional investors, primarily hedge funds, had heavily shorted the stock to profit off of declining sales and profits. Then, hundreds of thousands of enthusiastic comments and posts about GameStop were shared on r/WSB, causing retail investors fuelling a short-squeeze as hedge funds were forced to cover their losses. The stock price had increased by several multiples, and Wall Street suffered billions in losses. The Financial Times covered it in further detail [here](https://www.ft.com/content/47e3eaad-e087-4250-97fd-e428bac4b5e9).
 
-The craze behind GameStop was not isolated. r/WSB had indulged in several other companies - [AMC Entertainment Holdings](https://finance.yahoo.com/quote/AMC), [Nokia](https://finance.yahoo.com/quote/NOK/) and [Sundial Growers](https://finance.yahoo.com/quote/SNDL/) to name a few. Observerving these trends, we wanted to further understand them for two reasons. Firstly, as a collective group of retail investors, r/WSB was able to rattle the financial industry despite competing against professionals with access to a vast amount of financial capital and real-time information to act upon. Secondly, we saw that many of these investors were pouring significant amounts, even their life savings 
+The craze behind GameStop was not isolated. r/WSB had indulged in several other companies - [AMC Entertainment Holdings](https://finance.yahoo.com/quote/AMC), [Nokia](https://finance.yahoo.com/quote/NOK/) and [Sundial Growers](https://finance.yahoo.com/quote/SNDL/) to name a few. Observing these trends, we were intrigued as to how a collective group of retail investors was able to rattle the financial industry despite competing against financial professionals with access to a vast amount of information and capital. Additionally, we saw that many of these investors were pouring significant sums of money, including their life savings, into  companies advocated for on the platform. These investments are often unconventional and against the advice of financial professionals and ratings firms.
+
+And thus we wanted to know: Who's right? Are r/WSB investors throwing their money away or have they proved institutional investors wrong? Are they sensible or irrational? To answer this, we needed to do a deeper analysis of the r/WSB community, to understand what is being said on these forums and the stocks that they are advocating for to identify patterns and performance trends.
+
 
 *carry on about impact on the mainstream financial industry, subscriber growth, how active they are on Reddit, etc.) Cite some articles and data supporting this* Done? -William
 
@@ -23,8 +30,6 @@ The craze behind GameStop was not isolated. r/WSB had indulged in several other 
 <p align="center">
   <img src="https://github.com/prakritj/ds105_wsb/blob/gh-pages/WSB_200k_loss.jpg?raw=true" height="500">
 </p>
-  
-into many companies advocated for on the platform. These investments are often unconventional, and financial professionals/ratings firms don't share many of the views of the community. The question then is: who's right? Are r/WSB investors throwing their money away or have they proved institutional investors wrong? To answer this, we needed to do a deeper analysis of the r/WSB community, what is being said on these forums, and understand the stocks that they are advocating for to identify patterns and performance trends. *need to expand a bit more on this, with some evidence, etc.*
 
 
 *for the rest of this, I will be more brief and merely provide a basic template*
