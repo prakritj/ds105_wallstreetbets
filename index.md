@@ -78,25 +78,21 @@ The average comment sentiment was -0.35, however the median and mode were 0 - th
 |:--:|
 |![image](https://user-images.githubusercontent.com/92173642/147842092-94823cb6-65a2-4bb7-83dc-0f7f5aca71d9.jpeg)|
 
-Considering the general negativity of the internet, it was not surprising to us that the mean sentiment was negative. However, upon further review, we discovered that the negativity was driven by reactions to negative outcomes on the stock market. In other words, r/WSB 
+Considering the general negativity of the internet, it was not surprising to us that the mean sentiment was negative. However, upon further review, we discovered that the negativity was driven by reactions to negative outcomes on the stock market. In other words, r/WSB investors were upset that their investments had decreased in value, and expressed their dissapointment on r/WSB. A few examples best demonstrate this:
 
-__*William: add more detail on this part about why the sentiment was negative*__
+__*William: add comment examples based on the above*__
 
-It is not surprising that the sentiment is skewed towards the left given the nature of r/WallStreetBets being filled with many posts and comments about losing money relative to posts and comments about making money. However, upon closer inspection of the  sentiment of specific comments picked randomly, we have noticed that the sentiment of comments may be getting measured incorrectly. A few examples are listed below:
+Despite this finding, we also noticed some pecularities with the way the AFINN Lexicon rated our comments. It did not consistently and accurately interpret meaning and tone given the context and language of r/WSB users. Below are a few examples where this is most evident:  
 
-- "GME and AMC to the moon" - Sentiment Score: 0
-- "Reddit's EFT is on FIRE, GME 151%, BB 13% (w.e. but still), AMC 300%, LOOK AT US WE'RE THE HEDGE MANAGER NOW." - Sentiment Score: -2
-- "Daily popular ticker thread words great. Instead of 165 tickers getting spammed by bag holders in the daily it's only 162, much more manageable". - Sentiment Score: 6
+|**Comment**|**Sentiment Score**|
+| --- | ---: |
+| "GME and AMC to the moon" | 0 |
+| "Reddit's EFT is on FIRE, GME 151%, BB 13% (w.e. but still), AMC 300%, LOOK AT US WE'RE THE HEDGE MANAGER NOW." | -2 |
+| "Daily popular ticker thread words great. Instead of 165 tickers getting spammed by bag holders in the daily it's only 162, much more manageable". | +6 |
 
-In the first comment, "to the moon" is a common phrase used by r/WallStreetBets redditors to show their support for a certain stock and reflects a positive sentiment, which isn't captured by the AFINN dictionary. In the second comment, the commenter is very positive about the gains in GME, BB and AMC, yet AFINN sentiment analysis believes that it has negative sentiment.
-Lastly, in the third comment sarcasm is used so the AFINN dictionary is mislead into deeming that comment has positive sentiment.
+"To the moon" is a *very* common phrase used by r/WSB to show their support for a certain stock and reflects a positive sentiment. However, as shown in the first comment, this is not reflected in the AFINN Sentiment Score. As the Lexicon has a limited number of words in the dictionary, many comments go unrated, explaining our mode of a 0 sentiment score. In the second comment, the commenter uses "fire" in a positive way to suggest that the stocks they mentioned were going up, yet the AFINN Lexico interprets this word in a negative way and attributes it a negative sentiment score. Social media users also regularly use irony and sarcasm, which the AFINN Lexicon is unable to understand; the third comment is therefore incorrectly attributed a positive sentiment score. Ultimately, the AFINN Lexicon may not be the best method to analysis the sentiment of social media comments - had we known this earlier, we may have opted to use machine learning instead.
 
-This shows that there are limitations to using the AFINN lexicon to accurately measure the sentiment of r/WallStreetBets comments. This is in part to due the dictionary of words not being tailored to the words or phrases used on social media. Another limitation comes from using sentiment analysis based on words alone rather than phrases or entire sentences.
-
-On a longer timescale, we may have been able to produce our own custom dictionary for words use on r/WallStreetBets to more accurately capture sentiment. Furthermore, there may be the potential to use machine learning to better capture the sentiment of whole phrases and sentiments by using services such as the [Natural Langauge Understanding AI](https://www.ibm.com/uk-en/cloud/watson-natural-language-understanding) by IBM.
-
-*It is no surprise that sentiment is skewed towards the left, with a mean of -0.35 - but it is still follows a relatively normal distribution. Generally the internet is quite a negative place after all* 
-*We ran this in comparison with an AFINN Dict - acknowledge limitations that it is not the most fitting for social media* -Done? William
+Despite the limitations of our sentiment analysis method, after having perused many comments and their attributed sentiment, we still believe that our previous proposition that the overall sentiment on r/WSB was negative due to poor performance of stocks of interest holds true.
 
 **Reading Level Analysis**
 
