@@ -150,11 +150,11 @@ Out of the 8 sectors represented in the top 23 stocks, 3 sectors got 83% of the 
 
 This again demonstrates an unsophisticated, high-risk strategy. Other than squeezing Wall Street short-sellers, r/WSB's main targets are companies which leverage technological innovation as their main selling point. This makes their strategy even riskier. Not only are r/WSB investors vulnerable to market crashes, but they are also in jeopardy if the technological industry is deemed to be overvalued. A dot-com-like bubble may burst, wiping out the majority of r/WSB stocks. This would be disastrous to these retail investors who rely on advice on r/WSB. Professional investors know better than to greatly expose themselves to such a risk.
 
-Thus, this data reinforces our assertion that investing advice on r/WSB is akin to gambling instead of a thought-out strategy.
+Thus, our data reinforces our assertion that investing advice on r/WSB is akin to gambling instead of a thought-out strategy.
 
 ## Overall Performance 
 
-Now that we have examined 
+Having discussed r/WSB's investment strategies (or lack thereof) as well as trends in interest, the obvious question is: "Are they successful?" We analysed the performance of the stocks which r/WSB discussed both during the  
 
 **Individual Stocks**
 *How did stocks do since Jul 1 and before then?*
