@@ -72,13 +72,15 @@ Noteworthy is the high activity on these forums. 27,670 comments per day were po
 
 To get an overview of the opinions and emotions that people were expressing on Reddit, we ran a sentiment analysis comparing our dataset of r/WSB comments with the popular AFINN Sentiment Lexicon. The AFINN Lexicon is a dictionary of a couple thousand English words rated for valence with an integer between -5 (negative) and +5 (positive).
 
-The averaage comment sentiment was -0.35, however the median and mode were 0 - thus, the distribution of comment sentiment was negatively skewed, as shown below.
+The average comment sentiment was -0.35, however the median and mode were 0 - thus, the distribution of comment sentiment was negatively skewed, as shown below.
 
-<p align="center">
-  <img src="https://github.com/prakritj/ds105_wsb/blob/gh-pages/comment_sentiment.JPG?raw=true" height="400">
-</p>
+|Negatively-Skewed r/WSB Comment Sentiment Distribution|
+|:--:|
+|![image](https://user-images.githubusercontent.com/92173642/147842092-94823cb6-65a2-4bb7-83dc-0f7f5aca71d9.jpeg)|
 
-Considering the negativity of the internet in general, it was not surprising to us 
+Considering the general negativity of the internet, it was not surprising to us that the mean sentiment was negative. However, upon further review, we discovered that the negativity was driven by reactions to negative outcomes on the stock market. In other words, r/WSB 
+
+__*William: add more detail on this part about why the sentiment was negative*__
 
 It is not surprising that the sentiment is skewed towards the left given the nature of r/WallStreetBets being filled with many posts and comments about losing money relative to posts and comments about making money. However, upon closer inspection of the  sentiment of specific comments picked randomly, we have noticed that the sentiment of comments may be getting measured incorrectly. A few examples are listed below:
 
