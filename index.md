@@ -95,6 +95,32 @@ To analyse our dataset further, we needed to identify the stocks that r/WSB was 
 
 __*Add table of companies here*__
 
+|**Ticker**|**Frequency**|**Cumulative Score**|**Buy/Sell**|
+|:--:|:--:|:--:|:--:|
+|GME|7554|360351|Buy|
+|AMC|5879|206158|Buy|
+|PLTR|4992|90611|Buy|
+|NOK|936|44803|Buy|
+|SNDL|1252|37284|Buy|
+|WISH|1826|35522|Buy|
+|TSLA|2119|30824|Buy|
+|CLOV|1544|28758|Buy|
+|MVIS|1303|27584|Buy|
+|CLNE|1373|26641|Buy|
+|TLRY|1311|23135|Buy|
+|UWMC|981|14844|Buy|
+|AAPL|949|13625|Buy|
+|RKT|918|13028|Buy|
+|WKHS|655|10360|Buy|
+|NIO|585|8015|Buy|
+|EDIT|42|7129|Buy|
+|CLF|471|7090|Buy|
+|AMD|629|6643|Buy|
+|SPCE|440|6017|Buy|
+|CRSR|288|5124|Buy|
+|ASO|399|5019|Buy|
+|OCGN|323|4981|Buy|
+
 *need to connect this back to our argument. A lot of institutional and sophisticated investors try to diversify their exposure to market volatility by betting on some stocks going down, some going up - buy and put. In this case, r/WSB is only buying. Clearly they are not risk averse in this regard. It also demonstrates a lack of sophistication to only bet on stocks going up. we will see with regards to exposure to different industries, and it is also possible that they prefer higher risk trades.*
 
 **Looking at our list of stocks**
