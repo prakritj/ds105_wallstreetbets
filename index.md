@@ -131,6 +131,24 @@ Investors can also decrease their exposure to risk by investing in several diffe
 |:--:|
 |![image](https://user-images.githubusercontent.com/92173642/147846348-3af92a6b-1c74-4b8e-bcc6-5ee290f88dd4.jpeg)|
 
+Out of the 8 sectors represented in the top 23 stocks, 3 sectors got 83% of the upvotes (score). On a broader level, these popular companies can mostly be sorted into two categories: (1) firms which have invested in some technological innovation, and (2) investments to profit from squeezing out short-sellers. Below are how the companies in the 3 industrial sectors broadly fit into our two categories.
+
+*Consumer Cyclical*
+- GME is a brick-and-mortar game electronics company which was heavily shorted by Wall Street - *Squeeze*.
+- TSLA, NIO, and WKHS are innovators in the space of electric vehicles - *Innovation*.
+- WISH is an e-commerce platform which uses algorithms for a more personalised shopping experience - *Innovation*.
+
+*Communication Services*
+- AMC is a cinema theatre company which was heavily shorted by Wall Street - *Squeeze*.
+
+*Technology*
+- PLTR is specialises in software and data analytics - *Innovation*.
+- NOK now develops telecommunications technologies - *Innovation*.
+- MVIS develops laser scanning technologies for use in autonomous driving applications - *Innovation*.
+- AMD is a semi-conductor company designing computing and processing chips - *Innovation*.
+- AAPL is a consumer electronics and software company - *Innovation*.
+
+This again demonstrates an unsophisticated, high-risk strategy. 
 
 *Zoom back out to look at our overall data. Explain briefly process of getting industry data from Yahoo Finance using yfinance. Total of 8 industries within the top 23 stocks - yfinance has total of 11. But looking through, most are consumer cyclical, technology, healthcare. lack of sophistication and high risk*
 
@@ -174,7 +192,7 @@ Despite this finding, we also noticed some pecularities with the way the AFINN L
 
 "To the moon" is a *very* common phrase used by r/WSB to show their support for a certain stock and reflects a positive sentiment. However, as shown in the first comment, this is not reflected in the AFINN Sentiment Score. As the Lexicon has a limited number of words in the dictionary, many comments go unrated, explaining our mode of a 0 sentiment score. In the second comment, the commenter uses "fire" in a positive way to suggest that the stocks they mentioned were going up, yet the AFINN Lexico interprets this word in a negative way and attributes it a negative sentiment score. Social media users also regularly use irony and sarcasm, which the AFINN Lexicon is unable to understand; the third comment is therefore incorrectly attributed a positive sentiment score. Ultimately, the AFINN Lexicon may not be the best method to analysis the sentiment of social media comments - had we known this earlier, we may have opted to use machine learning instead.
 
-Despite the limitations of our sentiment analysis method, after having perused many comments and their attributed sentiment, we still believe that our previous proposition that the overall sentiment on r/WSB was negative due to poor performance of stocks of interest holds true.
+Despite the limitations of our sentiment analysis method, after having perused many comments and their attributed sentiment, we still believe that our previous proposition – that the overall sentiment on r/WSB was negative due to poor performance of stocks of interest – holds true.
 
 
 ## Conclusion
