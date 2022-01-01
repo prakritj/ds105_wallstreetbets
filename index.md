@@ -148,18 +148,13 @@ Out of the 8 sectors represented in the top 23 stocks, 3 sectors got 83% of the 
 - AMD is a semi-conductor company designing computing and processing chips - *Innovation*.
 - AAPL is a consumer electronics and software company - *Innovation*.
 
-This again demonstrates an unsophisticated, high-risk strategy. 
+This again demonstrates an unsophisticated, high-risk strategy. Other than squeezing Wall Street short-sellers, r/WSB's main targets are companies which leverage technological innovation as their main selling point. This makes their strategy even riskier. Not only are r/WSB investors vulnerable to market crashes, but they are also in jeopardy if the technological industry is deemed to be overvalued. A dot-com-like bubble may burst, wiping out the majority of r/WSB stocks. This would be disastrous to these retail investors who rely on advice on r/WSB. Professional investors know better than to greatly expose themselves to such a risk.
 
-*Zoom back out to look at our overall data. Explain briefly process of getting industry data from Yahoo Finance using yfinance. Total of 8 industries within the top 23 stocks - yfinance has total of 11. But looking through, most are consumer cyclical, technology, healthcare. lack of sophistication and high risk*
-
-*weighted each sector by upvotes, examined it as a share. 3 big sectors in consumer cyclical, technology, communication services = 83% of upvotes. look at slide for why, separate behaviour when trying to bet on company growth vs acting out of spite.*
-*one takeaway here is again, super high risk. A lot of positions are concentrated on very few industries. These may be high growth, but without a lot of diversification with regards to industries. And it may also be volatile. Another takeaway is that a LOT of upvotes are dedicated to just acting out of spite. Again, indicates a lack of sense when making financial decisions. (maybe can put this point somewhere else).*
-
-**Looking at our list of stocks**
-
-*before delving into further analysis, briefly run through the stocks that made it to the top 23. In particular discuss a few that have probably gained some attention - GME, AMC, WISH, TSLA, etc. Focus on why they invested in GME and and AMC - to get back at financial industry. At this point, we will post our data viz JS component.*
+Thus, this data reinforces our assertion that investing advice on r/WSB is akin to gambling instead of a thought-out strategy.
 
 ## Overall Performance 
+
+Now that we have examined 
 
 **Individual Stocks**
 *How did stocks do since Jul 1 and before then?*
