@@ -91,7 +91,9 @@ Our secondary analysis shows that the Flesch-Kincaid Reading Level is low on soc
 
 ### Further Analysis of Stocks
 
-*here, talk about how we took each comment apart by word, compared it to a list of all US equities (based on our reading of the forum, their focus is on US Stocks). Then we extracted the top 30 - many are false positives. Eliminated the false positives by generating a random list of comments which have each ticker, determine whether it is buy, sell, or false positive. Then say we got the top XX stocks as a result, sorted based on total upvotes*
+To analyse our dataset further, we needed to identify the stocks that r/WSB was discussing on a larger scale. To do this, we stripped each comment into all-caps words resembling stock tickers, compared it against a list of all companies listed in the US (r/WSB primarily discusses US-based companies) and then extracted the top 30 tickers mentioned on the Subreddit. From this, many were a false positive - all-caps words which were used frequently but not in the context of the stock itself. We eliminated  false positives by examining a random list of comments for each ticker, categorising them into three categories: buy, sell, or false positive. 7 were false positives, leaving us with a list of 23 companies to analyse:
+
+__*Add table of companies here*__
 
 *need to connect this back to our argument. A lot of institutional and sophisticated investors try to diversify their exposure to market volatility by betting on some stocks going down, some going up - buy and put. In this case, r/WSB is only buying. Clearly they are not risk averse in this regard. It also demonstrates a lack of sophistication to only bet on stocks going up. we will see with regards to exposure to different industries, and it is also possible that they prefer higher risk trades.*
 
