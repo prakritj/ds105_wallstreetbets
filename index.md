@@ -22,7 +22,7 @@ And thus we wanted to know: Who's right? Are r/WSB investors throwing their mone
 
 |Redditors have invested vast sums based on advice from r/WSB|
 |:--:| 
-|![Image2](https://github.com/prakritj/ds105_wsb/blob/gh-pages/PNG%20image.png)|
+|![image](https://user-images.githubusercontent.com/92173642/147845910-3c2be8d4-68fd-41b4-8884-bc76a339d03d.png)|
 
 ## Getting our Data
 
@@ -50,7 +50,7 @@ One limitation with Reddit's API (and, by extension, PRAW) is the way it retriev
 
 ### Statistical Summary
 
-In our 180 day period, we went through 130 posts - these Daily Discussion Threads were not posted on weekends. Despite not being able to retrieve all comments, we still pulled 92,379 comments out of a total of 3.5 million. These comments amassed more than 2 million upvotes, with an average score of 23.84 (score being upvotes - downvotes).
+In our 180 day period, we went through 130 posts - these Daily Discussion Threads were not posted on weekends and other days when the market was closed. Despite not being able to retrieve all comments, we still pulled 92,379 comments out of a total of 3.5 million. These comments amassed more than 2 million upvotes, with an average score of 23.84 (score being upvotes - downvotes).
 
 Noteworthy is the high activity on these forums. 27,670 comments per day were posted on these discussion threads alone. The 2+ million upvotes on comments during this period indicates a high level of engagement with these comments. There is a significant amount of content regularly submitted on r/WSB, even on working days when these threads are active.   
 
@@ -119,19 +119,20 @@ To analyse our dataset further, we needed to identify the stocks that r/WSB was 
 |ASO|399|5019|Buy|
 |OCGN|323|4981|Buy|
 
-Most sophisticated individual investors as well as institutional investors try to diversify their exposure to market volatility by short-selling (betting on some stocks going down) in additionee
-*need to connect this back to our argument. A lot of institutional and sophisticated investors try to diversify their exposure to market volatility by betting on some stocks going down, some going up - buy and put. In this case, r/WSB is only buying. Clearly they are not risk averse in this regard. It also demonstrates a lack of sophistication to only bet on stocks going up. we will see with regards to exposure to different industries, and it is also possible that they prefer higher risk trades.*
+As our data shows, **r/WSB only advocates for buying stocks**. We interpret this to be a demonstration of the lack of sophistication of financial advice given on r/WSB, in line with our previous data on reading level. Perhaps it is a fixed mindset for spotting opportunities; they only see the ways that companies can grow but not the ways they could fail. Such an intellectual gap would also explain poor stock performance, which is covered in the next section.
+
+This pattern of only buying stocks also indicates that their holistic investment strategy (if there is one) is extremely risky. Most trained individual investors as well as institutional investors try to diversify their exposure to market volatility by short-selling (betting on some stocks going down) in addition to buying stocks conventionally.  Although the stock market does trend up in general, such a high-risk, high-reward strategy could be detrimental when retail investors are looking to retire based on how their portfolio has grown over a long period of time. This would also test the longevity and long-term prospects for investments from r/WSB, as these investors may run out of capital quickly before they are able to benefit from long-term gains. More succinctly, it seems like r/WallStreetBets  eponymously advocates for gambling rather than skillful investing, and users following such advice could be throwing their money away.
+
+**Looking at Sectors**
+
+*Zoom back out to look at our overall data. Explain briefly process of getting industry data from Yahoo Finance using yfinance. Total of 8 industries within the top 23 stocks - yfinance has total of 11. But looking through, most are consumer cyclical, technology, healthcare. lack of sophistication and high risk*
+
+*weighted each sector by upvotes, examined it as a share. 3 big sectors in consumer cyclical, technology, communication services = 83% of upvotes. look at slide for why, separate behaviour when trying to bet on company growth vs acting out of spite.*
+*one takeaway here is again, super high risk. A lot of positions are concentrated on very few industries. These may be high growth, but without a lot of diversification with regards to industries. And it may also be volatile. Another takeaway is that a LOT of upvotes are dedicated to just acting out of spite. Again, indicates a lack of sense when making financial decisions. (maybe can put this point somewhere else).*
 
 **Looking at our list of stocks**
 
 *before delving into further analysis, briefly run through the stocks that made it to the top 23. In particular discuss a few that have probably gained some attention - GME, AMC, WISH, TSLA, etc. Focus on why they invested in GME and and AMC - to get back at financial industry. At this point, we will post our data viz JS component.*
-
-**Looking at Sectors**
-
-*Zoom back out to look at our overall data. Explain briefly process of getting industry data from Yahoo Finance using yfinance. Total of 8 industries within the top 23 stocks - yfinance has total of 11. But looking through, most are consumer cyclical, technology, healthcare.*
-
-*weighted each sector by upvotes, examined it as a share. 3 big sectors in consumer cyclical, technology, communication services = 83% of upvotes. look at slide for why, separate behaviour when trying to bet on company growth vs acting out of spite.*
-*one takeaway here is again, super high risk. A lot of positions are concentrated on very few industries. These may be high growth, but without a lot of diversification with regards to industries. And it may also be volatile. Another takeaway is that a LOT of upvotes are dedicated to just acting out of spite. Again, indicates a lack of sense when making financial decisions. (maybe can put this point somewhere else).*
 
 ## Overall Performance 
 
