@@ -125,6 +125,13 @@ This pattern of only buying stocks also indicates that their holistic investment
 
 **Looking at Sectors**
 
+Investors can also decrease their exposure to risk by investing in several different economic sectors which are unlikely to fail synchronously. Therefore, we examined which sectors were popular with r/WSB users to determine whether it was diversified. Sector data was pulled from yahoo Finance using the `yfinance` Python module. Yahoo Finance has 11 different sectors - r/WSB's Top 23 stocks covered 8 of them. Though this seems diversified on the face of it, once we weighed sectors by the Reddit score that comments referencing their respective companies had received, it was clear that only a few industries had been popular. 
+
+|Sectors and their Respective Score|
+|:--:|
+|![image](https://user-images.githubusercontent.com/92173642/147846348-3af92a6b-1c74-4b8e-bcc6-5ee290f88dd4.jpeg)|
+
+
 *Zoom back out to look at our overall data. Explain briefly process of getting industry data from Yahoo Finance using yfinance. Total of 8 industries within the top 23 stocks - yfinance has total of 11. But looking through, most are consumer cyclical, technology, healthcare. lack of sophistication and high risk*
 
 *weighted each sector by upvotes, examined it as a share. 3 big sectors in consumer cyclical, technology, communication services = 83% of upvotes. look at slide for why, separate behaviour when trying to bet on company growth vs acting out of spite.*
