@@ -73,15 +73,21 @@ The reading level of these comments is astonishingly low - an average of Grade 3
 
 __*William - add Reading Level Distribution here, elaborate a bit on it*__
 
-Unlike some social media forums where the average user is indeed very young, r/WSB users are discussing investing, a topic generally reserved for those over 18, and more popular for those who are older and have far more in savings to invest. It is difficult to turn a blind eye to adults discussing financial information with the written maturity of a 10-year-old, particularly when it is consequential for their future.
+Unlike some social media forums where the average user is indeed very young, r/WSB users are discussing investing, a topic generally reserved for those over 18, and more popular for those who are older and have far more in savings to invest. It is difficult to turn a blind eye to adults discussing financial information with the written maturity of a 10-year-old, particularly when it is consequential for their future. Considering these comments are neither analytical nor insightful, it is unlikely that Redditors are outsmarting institutional investors - professionals who do their homework.
 
-When examining these comments and their attributed reading level, it's no surprise that the average reading level was so low. They are often short phrases with little-to-no analysis, not saying much beyond a stock ticker itself.
+However, there are some limitations with applying the Flesch-Kincaid Reading Level methodology to our dataset. Social media comments are generally short with fewer sentences and words compared to other media. Because of the way reading level is calculated (see below), these comments can generate low (or even negative) reading levels, underestimating the writer's intelligence. Therefore, we conducted a deeper analysis, looking at comments with their respective reading level to determine whether there were any discrepancies.
 
-Considering these comments are not particularly analytical nor insightful, it is unlikely that Redditors are outsmarting institutional investors - professionals who do their homework. 
+![image](https://user-images.githubusercontent.com/92173642/147844306-5f73bb58-591e-4634-83fd-45b3f2b6ce9a.png)
 
-Limitation - this is not made for social media, scores take into account number of words/syllables/whatever, analysis might not be exactly correct. That said, it seems far off from the level of analysis that one should do before making investment decisions.*
+When examining these comments and their attributed reading level, it's no surprise that the average Flesch-Kincaid Reading Level was so low. They are often short phrases with little-to-no analysis, not saying much beyond a stock ticker itself:
 
-Consider the high-stakes nature of investing large sums of money. these should be educated decisions made with a decent amount of analysis and thought. If indeed Redditors are somehow outsmarting institutional investors, then they must have done a significant amount of analysis to arrive at their conclusion regarding what stocks to pick! 
+|**Comment**|**Reading Level**|
+|:--|:--:|
+|"NIO to 60 EOW"|2.5|
+|"Imagine paperhandling CLNE during such a buying opportunity"|14.7|
+|"This market is dumb. Who bought calls on CLNE? Who tanked it?"|-1.0|
+
+Our secondary analysis shows that the Flesch-Kincaid Reading Level is low on social media comments not solely because it isn't tuned for them (though this may be a factor), but to a large extent because this medium is not conducive for intellectual conversations in the first place. Though one would hope that Redditors would do a significant amount of analysis before investing their savings, our data shows that little analysis is being presented or discussed before investment decisions are being made. It is improbable that this strategy would outperform the financial industry, or benchmarks such as the S&P500. A lack of even rudimentary analysis suggests that many of these decisions are irrational.
 
 ### Further Analysis of Stocks
 
@@ -126,10 +132,10 @@ __*William: add comment examples based on the above*__
 Despite this finding, we also noticed some pecularities with the way the AFINN Lexicon rated our comments. It did not consistently and accurately interpret meaning and tone given the context and language of r/WSB users. Below are a few examples where this is most evident:  
 
 |**Comment**|**Sentiment Score**|
-| --- | ---: |
-| "GME and AMC to the moon" | 0 |
-| "Reddit's EFT is on FIRE, GME 151%, BB 13% (w.e. but still), AMC 300%, LOOK AT US WE'RE THE HEDGE MANAGER NOW." | -2 |
-| "Daily popular ticker thread words great. Instead of 165 tickers getting spammed by bag holders in the daily it's only 162, much more manageable". | +6 |
+|---|:---:|
+|"GME and AMC to the moon"|0|
+|"Reddit's EFT is on FIRE, GME 151%, BB 13% (w.e. but still), AMC 300%, LOOK AT US WE'RE THE HEDGE MANAGER NOW."|-2|
+|"Daily popular ticker thread words great. Instead of 165 tickers getting spammed by bag holders in the daily it's only 162, much more manageable".|+6|
 
 "To the moon" is a *very* common phrase used by r/WSB to show their support for a certain stock and reflects a positive sentiment. However, as shown in the first comment, this is not reflected in the AFINN Sentiment Score. As the Lexicon has a limited number of words in the dictionary, many comments go unrated, explaining our mode of a 0 sentiment score. In the second comment, the commenter uses "fire" in a positive way to suggest that the stocks they mentioned were going up, yet the AFINN Lexico interprets this word in a negative way and attributes it a negative sentiment score. Social media users also regularly use irony and sarcasm, which the AFINN Lexicon is unable to understand; the third comment is therefore incorrectly attributed a positive sentiment score. Ultimately, the AFINN Lexicon may not be the best method to analysis the sentiment of social media comments - had we known this earlier, we may have opted to use machine learning instead.
 
