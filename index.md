@@ -168,12 +168,33 @@ However, for most stocks, this is not the case and r/WSB bets on growth. This st
 |:--:|
 |![image](https://github.com/prakritj/ds105_wsb/blob/gh-pages/Sans%20titre.png)|
 
+|AMC (AMC Entertainment) YTD|
+|:--:|
+|![image](https://github.com/prakritj/ds105_wsb/blob/gh-pages/AMC.png)|
+
 **Aggregating Performance**
 
 After having analysed individual stocks performance, we wanted to better aggregate r/WSB choices to analyze and compare performance with alternatives, such as the S&P 500. As such, we constructed a 'WSB' index consisting of the top 10 most popular stocks, whose scores represent over 75% of the discussions on r/WSB. The composition of the index is decided by weighting the stocks by their score. 
 
+|The 'WSB' Index|
+|:--:|
+|![image](https://github.com/prakritj/ds105_wsb/blob/gh-pages/WSB%20Index.png)|
+
 The ex-ante WSB Index Performance forecasted a very strong and unbelievable year-to-date return on investment, more than 600% !! Ultimately, the WSB Index Performance would have followed the same trend as the S&P 500, that rose significantly (around 25%) in 2021. 
+
+|The ex-ante WSB Index Performance|
+|:--:|
+|![image](https://github.com/prakritj/ds105_wsb/blob/gh-pages/WSB%20ex%20ante.png)|
+
+|S&P 500 YTD performance|
+|:--:|
+|![image](https://github.com/prakritj/ds105_wsb/blob/gh-pages/S%26P%20500%20YTD.png)|
+
 However, the ex-post WSB Index Performance shows a negative return on investment of about -20 to -25% if you invested with them after June. Overall, these graphs depict a strong volatility, the stock prices variations not always being rational (i.e. GME or AMC). 
+
+|The ex-post WSB Index Performance|
+|:--:|
+|![image](https://github.com/prakritj/ds105_wsb/blob/gh-pages/WSB%20Ex%20post.png)|
 
 ### Sentiment Analysis and Distribution
 
