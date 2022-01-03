@@ -190,7 +190,7 @@ The ex-ante WSB Index Performance forecasted a very strong and unbelievable year
 |:--:|
 |![image](https://github.com/prakritj/ds105_wsb/blob/gh-pages/S%26P%20500%20YTD.png)|
 
-However, the ex-post WSB Index Performance shows a negative return on investment of about -20 to -25% if you invested with them after June. Overall, these graphs depict a strong volatility, the stock prices variations not always being rational (i.e. GME or AMC). 
+However, the ex-post WSB Index Performance shows a negative return on investment of about -22% if you invested with them after June. Overall, these graphs depict a strong volatility, the stock prices variations not always being rational (i.e. GME or AMC). 
 
 |The ex-post WSB Index Performance|
 |:--:|
