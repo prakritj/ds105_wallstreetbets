@@ -178,14 +178,12 @@ The average comment sentiment was -0.35, however the median and mode were 0 - th
 
 Considering the general negativity of the internet, it was not surprising to us that the mean sentiment was negative. However, upon further review, we discovered that the negativity was driven by reactions to negative outcomes on the stock market. In other words, r/WSB investors were upset that their investments had decreased in value, and expressed their dissapointment on r/WSB. A few examples best demonstrate this:
 
-__*William: add comment examples based on the above*__
-|Negative Sentiment Around GME After the Spike|
-|:---:|
-||**Comment**|**Sentiment Score**|
+_**Negative Sentiment Around GME After the Spike**_
+|**Comment**|**Sentiment Score**|
 |---|:---:|
 |"Managed to get another GME in the sale just before closing, F___ YOU WALL STREET, I'M NOT F___ING SELLING💎🤲🚀🚀🚀🚀🚀"|-8|
 |"BUY BUY BUY. DONT LIVE YOUR LIFE SCARED! IF YOU ARE SCARED TO LOSE A FEW BUCKS BEFORE AMC AND GME BLAST OFF THEN WE DONT NEED YOU"|-4|
-|"So let me get this straight, GME crashes through the floor with a $250 m artificial dump monkey hammer ladder, and no halting. It gets a little steam and boom, trading halted?  Crooked ass NYSE jerks."|-5||
+|"So let me get this straight, GME crashes through the floor with a $250 m artificial dump monkey hammer ladder, and no halting. It gets a little steam and boom, trading halted?  Crooked ass NYSE jerks."|-5|
 
 Despite this finding, we also noticed some pecularities with the way the AFINN Lexicon rated our comments. It did not consistently and accurately interpret meaning and tone given the context and language of r/WSB users. Below are a few examples where this is most evident:  
 
