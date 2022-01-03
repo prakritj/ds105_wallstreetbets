@@ -164,6 +164,8 @@ Having discussed r/WSB's investment strategies (or lack thereof) as well as tren
 Individual stocks followed very different trends. Firstly, the cases of GME and AMC are unique. Indeed, r/WSB tried to squeeze the short sellers (in January-February 2021 for GME and June for AMC) to make significant profits. As such, GME stock price surged for example from around 50$ in mid/late January to more than 300$ at the beginning of February, and only for a very few days. The same happened to AMC with a stock price that rose from slightly more than 10$ in mid-May to more than 60$ in the first days of June. Ultimately, for GME and AMC, the collective action of r/WSB seems effective. 
 However, for most stocks, this is not the case and r/WSB bets on growth. This strategy seems to be less effective, given the fact that most stocks are trending downwards in 2021. This is for example the case of PLTR, CLNE and WISH that have all performed poorly in 2021.One exception is TSLA that has significantly increased in 2021.
 
+
+
 **Aggregating Performance**
 
 After having analysed individual stocks performance, we wanted to better aggregate r/WSB choices to analyze and compare performance with alternatives, such as the S&P 500. As such, we constructed a 'WSB' index consisting of the top 10 most popular stocks, whose scores represent over 75% of the discussions on r/WSB. The composition of the index is decided by weighting the stocks by their score. 
