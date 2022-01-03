@@ -71,12 +71,9 @@ Before analysing the stocks mentioned on r/WSB, we wanted to find out how intell
 
 The reading level of these comments is astonishingly low - an average of Grade 3.93 (according to a US-style Education System), around the level of a 10-year-old.
 
-|Distribution Showing the Reading Level of Comments|
+|Negatively-skewed Reading Level of r/WSB Comments|
 |:--:|
 |![Reading_level_image](https://user-images.githubusercontent.com/92174920/147933005-d78011c9-a497-4cd2-a725-fa684909ea0a.png)|
-
-__*William - add Reading Level Distribution here, elaborate a bit on it*__
-
 
 Unlike some social media forums where the average user is indeed very young, r/WSB users are discussing investing, a topic generally reserved for those over 18, and more popular for those who are older and have far more in savings to invest. It is difficult to turn a blind eye to adults discussing financial information with the written maturity of a 10-year-old, particularly when it is consequential for their future. Considering these comments are neither analytical nor insightful, it is unlikely that Redditors are outsmarting institutional investors - professionals who do their homework.
 
