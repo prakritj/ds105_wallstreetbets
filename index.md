@@ -257,7 +257,7 @@ _**Negative Sentiment Around GME After the Spike**_
 Despite this finding, we also noticed some pecularities with the way the AFINN Lexicon rated our comments. It did not consistently and accurately interpret meaning and tone given the context and language of r/WSB users. Below are a few examples where this is most evident:  
 
 |**Comment**|**Sentiment Score**|
-|---|:---:|
+|:---|:---:|
 |"GME and AMC to the moon"|0|
 |"Reddit's EFT is on FIRE, GME 151%, BB 13% (w.e. but still), AMC 300%, LOOK AT US WE'RE THE HEDGE MANAGER NOW."|-2|
 |"Daily popular ticker thread words great. Instead of 165 tickers getting spammed by bag holders in the daily it's only 162, much more manageable".|+6|
