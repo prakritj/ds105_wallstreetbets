@@ -185,9 +185,18 @@ To make money investing in companies like GME and AMC because of influence from 
 
 _Other Companies_
 
-Although GME and AMC have amassed significant popularity on r/WSB, most r/WSB stocks are not  this is not the case and r/WSB bets on growth. This strategy seems to be less effective, given the fact that most stocks are trending downwards in 2021. This is for example the case of PLTR, CLNE and WISH that have all performed poorly in 2021.One exception is TSLA that has significantly increased in 2021.
+For other companies where r/WSB was not advocating for a short squeeze, most had trended downwards in 2021. Below, we show the trend of some of the most popular stocks which r/WSB advocated for:
 
+|PLTR (Palantir)|CLNE (Clean Energy)|
+|:--:|:--:|
+|![image](https://user-images.githubusercontent.com/92173642/148366667-959d2ab8-1565-4813-b8ee-9dc0543cf449.png)|![image](https://user-images.githubusercontent.com/92173642/148366684-2fbfdbaf-12c1-4b76-9df3-f9b055966ce2.png)|
+|WISH (Wish)|SNDL (Sundial Technologies)|
+|![image](https://user-images.githubusercontent.com/92173642/148366836-b081109d-9862-4c25-a9b1-24f79b37c47a.png)|![image](https://user-images.githubusercontent.com/92173642/148367127-739a72fc-9463-4cc0-8031-f47e485a793f.png)|
 
+There were two major exceptions to this trend: Tesla and Nokia, both of which did exceedingly well in 2021.
+
+TSLA (Tesla)|NOK (Nokia)
+![image](https://user-images.githubusercontent.com/92173642/148366843-5414df2b-b323-41ec-903c-07a92a6a8d90.png)|![image](https://user-images.githubusercontent.com/92173642/148367344-cc2b45ab-6cdd-4b97-9e96-0923020d70bf.png)|
 
 **Aggregating Performance**
 
