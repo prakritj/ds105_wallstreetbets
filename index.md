@@ -181,7 +181,7 @@ Note that in both of these companies, the stock price has not tumbled in the mon
 
 This may be (temporarily) preventing an impending crash. Because the rest of the market does not share r/WSB's sentiment for these companies, Redditors will find it difficult to sell their stocks in these companies. Because others aren't buying as much as Redditors have, not all will be able to sell at the current market price. If these stock prices decrease at the same speed at which they had risen, this could be very damaging for many r/WSB investors - especially those that invested in high prices. This collective behaviour is masking potential losses that r/WSB investors will face when they finally liquidate their positions. Given the releatively new phenomenon of r/WSB popularity, current stock prices do not reflect such a possibility.
 
-To make money investing in companies like GME and AMC because of influence from r/WSB, retail investors will have to rely on early signals from the Reddit community and invest before others. Subsequently, they need to close their positions before others. Given the largesse of r/WSB and their willingness to quickly invest, this would be a difficult feat. Profiting from these positions would require a significant amount of luck, and very little skill.
+To make money investing in companies like GME and AMC because of influence from r/WSB, retail investors will have to rely on early signals from the Reddit community and invest before others. Subsequently, they need to close their positions before others. Given the largesse of r/WSB and their willingness to quickly invest, this would be a difficult feat. Profiting from these positions would require a significant amount of luck.
 
 _Other Companies_
 
