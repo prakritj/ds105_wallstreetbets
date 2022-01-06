@@ -169,11 +169,11 @@ The case of the former is best represented by GME and AMC. For these, we observe
 
 |GME (GameStop) YTD|
 |:--:|
-|![image](https://github.com/prakritj/ds105_wsb/blob/gh-pages/Sans%20titre.png)|
+|![image](https://user-images.githubusercontent.com/92173642/148428265-f55129ae-55da-42a9-8b8f-34234b904912.png)|
 
 |AMC (AMC Entertainment) YTD|
 |:--:|
-|![image](https://github.com/prakritj/ds105_wsb/blob/gh-pages/AMC.png)|
+|![image](https://user-images.githubusercontent.com/92173642/148428313-bb0a8d2b-6ac1-436c-8a76-543e1456fc65.png)|
 
 At first thought, it appears that r/WSB's collective action is successful as the stock price increased! However, because Redditors were partially driving this growth, we know that not all of them invested at the bottom. Mathematically, we know only a small portion did - most others are likely to have invested at other points during the rise, including near the peak. For these investors, it is unlikely that they made a significant profit - if they made one at all. 
 
@@ -207,7 +207,7 @@ Although examining stock performance individually is an indicator of overall per
 
 |Composition of the r/WSB Index|
 |:--:|
-|![image](https://github.com/prakritj/ds105_wsb/blob/gh-pages/WSB%20Index.png)|
+|![image](https://user-images.githubusercontent.com/92173642/148428387-d2141165-8626-4da3-8da9-1b7478ad06dd.png)|
 
 We analysed two periods for this r/WSB Index: from Jan to Dec 2021, from the start period of our Reddit comments data, and Jul to Dec 2021, the period directly after all the comments. This provides us data on ex-ante investments which predate these comments, and ex-post investments which follow them.
 
@@ -215,19 +215,19 @@ Because short squeeze investments dominate the index, it is expected that the In
 
 |Ex-Ante r/WSB Index Performance|
 |:--:|
-|![image](https://github.com/prakritj/ds105_wsb/blob/gh-pages/WSB%20ex%20ante.png)|
+|![image](https://user-images.githubusercontent.com/92173642/148428414-d74bc604-2bd1-4035-a079-58fda7fa03a4.png)|
 
 As we hinted at earlier, ex-post performance is less laudable. Since July, these investments have lost -22% in value. It is also obvious that these investments are very volatile, and there is no clear trend as to the future of these investments. 
 
-|Ex=Post r/WSB Index Performance|
+|Ex-Post r/WSB Index Performance|
 |:--:|
-|![image](https://github.com/prakritj/ds105_wsb/blob/gh-pages/WSB%20Ex%20post.png)|
+|![image](https://user-images.githubusercontent.com/92173642/148428476-ec751abd-d93b-4721-9d66-246754a26001.png)|
 
 These returns are striking compared to the S&P 500, a commonly-referenced equity index with the top 500 companies in the US. Throughout the year, the S&P 500 gained 26%. This is rather high for the index, and yet the r/WSB Index outperformed it significantly. In the last 6 months of 2021, however, the S&P500 grew 7% while the r/WSB Index made a loss. The companies chosen by r/WSB are not indicative of the overall market, and therefore it is no surprise that the performance does not track well with the S&P 500 either. 
 
 |S&P 500 2021 Performance|
 |:--:|
-|![image](https://github.com/prakritj/ds105_wsb/blob/gh-pages/S%26P%20500%20YTD.png)|
+|![image](https://user-images.githubusercontent.com/92173642/148428501-e8a6db1c-4de0-4e9f-8cbb-d32c85c3a6d2.png)|
 
 These results validate our previous findings. r/WSB investments don't necessarily perform better than the rest of the market, as can be seen in the last few months of 2021. Those companies are volatile and are risky to invest in, particularly when dealing with large sums for retail investors.
 
