@@ -181,7 +181,7 @@ Note that in both of these companies, the stock price has not tumbled in the mon
 
 This may be (temporarily) preventing an impending crash. Because the rest of the market does not share r/WSB's sentiment for these companies, Redditors will find it difficult to sell their stocks in these companies. Because others aren't buying as much as Redditors have, not all will be able to sell at the current market price. If these stock prices decrease at the same speed at which they had risen, this could be very damaging for many r/WSB investors - especially those that invested in high prices. This collective behaviour is masking potential losses that r/WSB investors will face when they finally liquidate their positions. Given the releatively new phenomenon of r/WSB popularity, current stock prices do not reflect such a possibility.
 
-To make money investing in companies like GME and AMC because of influence from r/WSB, retail investors will have to rely on early signals from the Reddit community and invest before others. Subsequently, they need to close their positions before others. Given the largesse of r/WSB and their willingness to quickly invest, this would be a difficult feat. Profiting from these positions would require a significant amount of luck.
+To make money investing in companies like GME and AMC because of influence from r/WSB, retail investors will have to rely on early signals from the Reddit community and invest before others. Subsequently, they need to close their positions before others. Given the largesse of r/WSB and their willingness to quickly invest, this would be a difficult feat. Profiting from these investments would thus require a significant amount of luck.
 
 _Other Companies_
 
@@ -190,21 +190,26 @@ For other companies where r/WSB was not advocating for a short squeeze, most had
 |PLTR (Palantir)|CLNE (Clean Energy)|
 |:--:|:--:|
 |![image](https://user-images.githubusercontent.com/92173642/148366667-959d2ab8-1565-4813-b8ee-9dc0543cf449.png)|![image](https://user-images.githubusercontent.com/92173642/148366684-2fbfdbaf-12c1-4b76-9df3-f9b055966ce2.png)|
-|WISH (Wish)|SNDL (Sundial Technologies)|
+|**WISH (Wish)**|**SNDL (Sundial Technologies)**|
 |![image](https://user-images.githubusercontent.com/92173642/148366836-b081109d-9862-4c25-a9b1-24f79b37c47a.png)|![image](https://user-images.githubusercontent.com/92173642/148367127-739a72fc-9463-4cc0-8031-f47e485a793f.png)|
 
-There were two major exceptions to this trend: Tesla and Nokia, both of which did exceedingly well in 2021.
+There were two major exceptions to this trend: Tesla and Nokia, both of which did exceedingly well in 2021. Nokia's growth was partly driven by r/WSB (particularly in an early spike), but its growth over time was mainly due to investors aware of its [a financial recovery](https://www.ft.com/content/2377219b-0c8f-4d36-983e-1c1947d4a961), far more tenable than investments in GME or AMC.
 
-TSLA (Tesla)|NOK (Nokia)
-![image](https://user-images.githubusercontent.com/92173642/148366843-5414df2b-b323-41ec-903c-07a92a6a8d90.png)|![image](https://user-images.githubusercontent.com/92173642/148367344-cc2b45ab-6cdd-4b97-9e96-0923020d70bf.png)|
+|TSLA (Tesla)|NOK (Nokia)|
+|:--:|:--:|
+|![image](https://user-images.githubusercontent.com/92173642/148366843-5414df2b-b323-41ec-903c-07a92a6a8d90.png)|![image](https://user-images.githubusercontent.com/92173642/148367344-cc2b45ab-6cdd-4b97-9e96-0923020d70bf.png)|
+
+On the quantum of companies alone, our data clearly suggests that r/WSB investors would have lost money on these investments this year. In other words _most_ of these investment decisions seem to be rather amiss. Their advice doesn't seem to be very profitable.
 
 **Aggregating Performance**
 
-After having analysed individual stocks performance, we wanted to better aggregate r/WSB choices to analyze and compare performance with alternatives, such as the S&P 500. As such, we constructed a 'WSB' index consisting of the top 10 most popular stocks, whose scores represent over 75% of the discussions on r/WSB. The composition of the index is decided by weighting the stocks by their score.
+Although examining stock performance individually is an indicator of overall performance, r/WSB traders (just like all investors) would not be investing equally into all of these companies. As a gauge for how r/WSB investors diversify their portfolio, we weighed each company in the top 10 (out of the top 23 stocks, the top 10 make up over 80% of total score) by their total Reddit score to create a 'r/WSB Index' with a different amount in each company. 
 
-|The 'WSB' Index|
+|Composition of the r/WSB Index|
 |:--:|
 |![image](https://github.com/prakritj/ds105_wsb/blob/gh-pages/WSB%20Index.png)|
+
+We analysed two periods for this r/WSB Index: from Jan to Jun 2021, the same period of our Reddit comments data, and Jul to Dec 2021, the period directly after all the comments were made. 
 
 The ex-ante WSB Index Performance forecasted a very strong and unbelievable year-to-date return on investment, more than 600% !! Ultimately, the WSB Index Performance would have followed the same trend as the S&P 500, that rose significantly (around 25%) in 2021.
 
