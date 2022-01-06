@@ -203,29 +203,37 @@ On the quantum of companies alone, our data clearly suggests that r/WSB investor
 
 **Aggregating Performance**
 
-Although examining stock performance individually is an indicator of overall performance, r/WSB traders (just like all investors) would not be investing equally into all of these companies. As a gauge for how r/WSB investors diversify their portfolio, we weighed each company in the top 10 (out of the top 23 stocks, the top 10 make up over 80% of total score) by their total Reddit score to create a 'r/WSB Index' with a different amount in each company. 
+Although examining stock performance individually is an indicator of overall performance, r/WSB traders (just like all investors) would not be investing equally into all of these companies. As a gauge for how r/WSB investors diversify their portfolio, we weighed each company in the top 10 (out of the top 23 stocks, the top 10 make up over 80% of total score) by their total Reddit score to create a 'r/WSB Index' with a different amount in each company. As can be seen below, GME and AMC make up a significant portion of the index at 64%, indicating that r/WSB is far more interested in short squeeze investments than others. 
 
 |Composition of the r/WSB Index|
 |:--:|
 |![image](https://github.com/prakritj/ds105_wsb/blob/gh-pages/WSB%20Index.png)|
 
-We analysed two periods for this r/WSB Index: from Jan to Jun 2021, the same period of our Reddit comments data, and Jul to Dec 2021, the period directly after all the comments were made. 
+We analysed two periods for this r/WSB Index: from Jan to Dec 2021, from the start period of our Reddit comments data, and Jul to Dec 2021, the period directly after all the comments. This provides us data on ex-ante investments which predate these comments, and ex-post investments which follow them.
 
-The ex-ante WSB Index Performance forecasted a very strong and unbelievable year-to-date return on investment, more than 600% !! Ultimately, the WSB Index Performance would have followed the same trend as the S&P 500, that rose significantly (around 25%) in 2021.
+Because short squeeze investments dominate the index, it is expected that the Index's ex-ante performance forecasted was very strong: throughout the year, these stocks generated returns of over 600%. This was mostly driven by sudden rises in GME and AMC which made up the majority of these holdings. Note that returns actually peaked in June, when they reached almost 1300% - since then, the index has been decreasing or stable.
 
-|The ex-ante WSB Index Performance|
+|Ex-Ante r/WSB Index Performance|
 |:--:|
 |![image](https://github.com/prakritj/ds105_wsb/blob/gh-pages/WSB%20ex%20ante.png)|
 
-|S&P 500 YTD Performance|
+As we hinted at earlier, ex-post performance is less laudable. Since July, these investments have lost -22% in value. It is also obvious that these investments are very volatile, and there is no clear trend as to the future of these investments. 
+
+|Ex=Post r/WSB Index Performance|
+|:--:|
+|![image](https://github.com/prakritj/ds105_wsb/blob/gh-pages/WSB%20Ex%20post.png)|
+
+These returns are striking compared to the S&P 500, a commonly-referenced equity index with the top 500 companies in the US. Throughout the year, the S&P 500 gained 26%. This is rather high for the index, and yet the r/WSB Index outperformed it significantly. In the last 6 months of 2021, however, the S&P500 grew 7% while the r/WSB Index made a loss. The companies chosen by r/WSB are not indicative of the overall market, and therefore it is no surprise that the performance does not track well with the S&P 500 either. 
+
+|S&P 500 2021 Performance|
 |:--:|
 |![image](https://github.com/prakritj/ds105_wsb/blob/gh-pages/S%26P%20500%20YTD.png)|
 
-However, the ex-post WSB Index Performance shows a negative return on investment of about -22% if you invested with them after June. Overall, these graphs depict a strong volatility, the stock prices variations not always being rational (i.e. GME or AMC). 
+These results validate our previous findings. r/WSB investments don't necessarily perform better than the rest of the market, as can be seen in the last few months of 2021. Those companies are volatile and are risky to invest in, particularly when dealing with large sums for retail investors.
 
-|The ex-post WSB Index Performance|
-|:--:|
-|![image](https://github.com/prakritj/ds105_wsb/blob/gh-pages/WSB%20Ex%20post.png)|
+Based on the difference between the first and second half of 2021, it is evident that a large part of why these stocks go up is because of r/WSB involvement. The performance in these stocks after July is an indication of the losses that r/WSB investors may be facing in the future after an initial phase. As we stated earlier, it is likely that over time, the prices of these stocks will decrease as Redditors close their positions while the rest of the market sees little value in buying those stocks, and our ex-post performance is denotative of that.
+
+Regular profit-driven investments recommended by r/WSB seem to be losing propositions in general. Short squeeze investments are profitable, but only for a select few. To profit from these investments, one has to enter _before_ the hype created by Reddit (ex-ante). To do so, they need to predict that a craze would erupt, a difficult task given the thousands of comments every day. Instead, it is more plausible that profiteers are just 'lucky' that they invested at the right time and closed their positions before a subsequent crash.
 
 ### Sentiment Analysis and Distribution
 
