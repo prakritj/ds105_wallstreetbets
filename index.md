@@ -163,10 +163,9 @@ Having discussed r/WSB's investment strategies (or lack thereof) as well as tren
 
 In line with what we saw with sectors, there is a marked difference in performance between companies where r/WSB attempted to squeeze out short-sellers, and those where r/WSB tried to bet on true growth. 
 
-The case of the former is best represented by GME and AMC. For these, we observed a rapid increase in price _because_ of r/WSB investors. The reason for this is twofold: while these significant new investments would have increased the price directly, short-sellers also decided to liquidate their positions, increasing the price further. This occurred rapidly; GME stock price surged for example from less than $50 t more than $250 e beginning of February, and only for a very few days. The same happened to AMC with a stock price that rose from slightly more than 10$ in mid-May to more than 60$ in the first days of June. Ultimately, for GME and AMC, the collective action of r/WSB seems effective. 
+_Short Squeeze Stocks_
 
-
-However, for most stocks, this is not the case and r/WSB bets on growth. This strategy seems to be less effective, given the fact that most stocks are trending downwards in 2021. This is for example the case of PLTR, CLNE and WISH that have all performed poorly in 2021.One exception is TSLA that has significantly increased in 2021.
+The case of the former is best represented by GME and AMC. For these, we observed a rapid increase in price _because_ of r/WSB investors. The reason for this is twofold: while these significant new investments would have increased the price directly, short-sellers also decided to liquidate their positions, increasing the price further. This occurred rapidly; GME's stock price surged for example from less than $50 in January to more than $250 by the beginning of February. AMC's stock price rose from around 10$ in mid-May to more than 60$ in the first days of June. It is most obvious when viewing this graphically: 
 
 |GME (GameStop) YTD|
 |:--:|
@@ -175,6 +174,13 @@ However, for most stocks, this is not the case and r/WSB bets on growth. This st
 |AMC (AMC Entertainment) YTD|
 |:--:|
 |![image](https://github.com/prakritj/ds105_wsb/blob/gh-pages/AMC.png)|
+
+At first thought, it appears that r/WSB's collective action is successful as the stock price increased! However, because Redditors were partially driving this growth, we know that not all of them invested at the bottom. Mathematically, we know only a small portion did - most others are likely to have invested at other points during the rise, including near the peak. For these investors, it is unlikely that they made a significant profit - if they made one at all. 
+
+Note that in both of these companies, the stock price has not tumbled in the months after being targeted by r/WSB. Considering that these stocks have little growth potential remaining (it grew because of r/WSB investors, all of whom have already invested), investors in the company would serve themselves well to close their position. So why have r/WSB investors not done so? Their discussion clearly reflects an intent to hold for as long as possible to squeeze out further short-sellers and 
+
+However, for most stocks, this is not the case and r/WSB bets on growth. This strategy seems to be less effective, given the fact that most stocks are trending downwards in 2021. This is for example the case of PLTR, CLNE and WISH that have all performed poorly in 2021.One exception is TSLA that has significantly increased in 2021.
+
 
 **Aggregating Performance**
 
