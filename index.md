@@ -163,7 +163,7 @@ Having discussed r/WSB's investment strategies (or lack thereof) as well as tren
 
 **Individual Stocks**
 
-<div id = "chart">
+<div id = "chart2">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.2.2/d3.min.js"></script>
 <script src="visualisation2.js"></script>
 </div>
@@ -240,7 +240,7 @@ These results validate our previous findings. r/WSB investments don't necessaril
 
 Based on the difference between the first and second half of 2021, it is evident that a large part of why these stocks go up is because of r/WSB involvement. The performance in these stocks after July is an indication of the losses that r/WSB investors may be facing in the future after an initial phase. As we stated earlier, it is likely that over time, the prices of these stocks will decrease as Redditors close their positions while the rest of the market sees little value in buying those stocks, and our ex-post performance is denotative of that.
 
-<div id = "chart">
+<div id = "chart3">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.2.2/d3.min.js"></script>
 <script src="visualisation3.js"></script>
 </div>
