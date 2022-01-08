@@ -1,8 +1,4 @@
 <link rel="stylesheet" href="styles.css">
-<div id = "chart">
-<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.2.2/d3.min.js"></script>
-<script src="visualisation.js"></script>
-</div>
 
 *Need to add a TLDR; do so at the end*
 # Exploring the Jungle of r/WSB
@@ -129,6 +125,11 @@ This pattern of only buying stocks also indicates that their holistic investment
 
 **Looking at Sectors**
 
+<div id = "chart">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.2.2/d3.min.js"></script>
+<script src="visualisation.js"></script>
+</div>
+
 Investors can also decrease their exposure to risk by investing in several different economic sectors which are unlikely to fail synchronously. Therefore, we examined which sectors were popular with r/WSB users to determine whether it was diversified. Sector data was pulled from yahoo Finance using the `yfinance` Python module. Yahoo Finance has 11 different sectors - r/WSB's Top 23 stocks covered 8 of them. Though this seems diversified on the face of it, once we weighed sectors by the Reddit score that comments referencing their respective companies had received, it was clear that only a few industries had been popular. 
 
 |Sectors and their Respective Score|
@@ -161,6 +162,11 @@ Thus, our data reinforces our assertion that investing advice on r/WSB is akin t
 Having discussed r/WSB's investment strategies (or lack thereof) as well as trends in interest, the obvious question is: "Are they successful?" We analysed the performance of these stocks individually before aggregating them to approach it from a different angle.
 
 **Individual Stocks**
+
+<div id = "chart">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.2.2/d3.min.js"></script>
+<script src="visualisation2.js"></script>
+</div>
 
 In line with what we saw with sectors, there is a marked difference in performance between companies where r/WSB attempted to squeeze out short-sellers, and those where r/WSB tried to bet on true growth. 
 
@@ -233,6 +239,11 @@ These returns are striking compared to the S&P 500, a commonly-referenced equity
 These results validate our previous findings. r/WSB investments don't necessarily perform better than the rest of the market, as can be seen in the last few months of 2021. Those companies are volatile and are risky to invest in, particularly when dealing with large sums for retail investors.
 
 Based on the difference between the first and second half of 2021, it is evident that a large part of why these stocks go up is because of r/WSB involvement. The performance in these stocks after July is an indication of the losses that r/WSB investors may be facing in the future after an initial phase. As we stated earlier, it is likely that over time, the prices of these stocks will decrease as Redditors close their positions while the rest of the market sees little value in buying those stocks, and our ex-post performance is denotative of that.
+
+<div id = "chart">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.2.2/d3.min.js"></script>
+<script src="visualisation3.js"></script>
+</div>
 
 Regular profit-driven investments recommended by r/WSB seem to be losing propositions in general. Short squeeze investments are profitable, but only for a select few. To profit from these investments, one has to enter _before_ the hype created by Reddit (ex-ante). To do so, they need to predict that a craze would erupt, a difficult task given the thousands of comments every day. Instead, it is more plausible that profiteers are just 'lucky' that they invested at the right time and closed their positions before a subsequent crash.
 
