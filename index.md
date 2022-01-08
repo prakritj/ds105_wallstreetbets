@@ -163,10 +163,7 @@ Having discussed r/WSB's investment strategies (or lack thereof) as well as tren
 
 **Individual Stocks**
 
-<div id = "chart2">
-<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.2.2/d3.min.js"></script>
 <script src="visualisation2.js"></script>
-</div>
 
 In line with what we saw with sectors, there is a marked difference in performance between companies where r/WSB attempted to squeeze out short-sellers, and those where r/WSB tried to bet on true growth. 
 
