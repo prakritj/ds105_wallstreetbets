@@ -28,6 +28,13 @@
         .defer(d3.csv, "final_dataset.csv")
         .await(ready)
     
+    var minPerf = -75.23,
+        maxPerf = 54.35;
+
+    var colourscale = d3.scaleLinear()
+        .domain([minPerf,0,maxPerf])
+        .range(["red", "lightgray", "green"]);
+    
     var toolTip = d3.select('body')
         .append('div')
         .attr("class", "tooltip")
@@ -36,6 +43,8 @@
         .style("right", (d3.event.pageX + 10) + "px")
         .style("top", (d3.event.pageY - 20) + "px");
 
+    var colour = "#69b3a2"
+    
     function ready (error, datapoints) {
         var circles = svg.selectAll(".ticker")
             .data(datapoints)
@@ -45,14 +54,8 @@
                 return radiusScale(d.score)
             })
             .attr("fill", function(d) {
-                if (d.Industry == 'Consumer Cyclical') {return "darkblue"}
-                if (d.Industry == 'Communication Services') {return "lightblue"}
-                if (d.Industry == 'Technology') {return "lightgreen"}
-                if (d.Industry == 'Healthcare') {return "red"}
-                if (d.Industry == 'Energy') {return "darkgreen"}
-                if (d.Industry == 'Financial Services') {return "pink"}
-                if (d.Industry == 'Basic Materials') {return "gray"}
-                if (d.Industry == 'Industrials') {return "black"}
+                return colourscale(d.jul_performance)
+            
             })
             .on('mouseover', function (d) {
                 d3.select('#tooltip')
@@ -60,7 +63,7 @@
                     .duration(200)
                     .style('opacity', 1)
 
-                d3.select('#tooltip').html(d.company + " ("+ d.ticker + ")" + "<br>" + "Industry: " + d.Industry + "<br/>" + "Score: " + d.score + "<br/>" + "2021 Performance: " + d.performance)
+                d3.select('#tooltip').html(d.company + " ("+ d.ticker + ")" + "<br>" + "Industry: " + d.Industry + "<br/>" + "Score: " + d.score + "<br/>" + "Jul-Dec 2021 Performance: " + d.jul_performance + "%")
                     .style("left", (d3.event.pageX + 10) + "px")
                     .style("top", (d3.event.pageY + 10) + "px");
             })
