@@ -48,11 +48,15 @@
                 d3.select('#tooltip')
                     .transition()
                     .duration(200)
-                    .style('opacity', 1);
+                    .style('opacity', 1)
 
                 d3.select('#tooltip').html(d.ticker + "<br>" + "Industry: " + d.Industry + "<br/>" + "Score: " + d.score)
-                    .style("left", d3.event.pageX + "px")
-                    .style("top", "10px")
+                    .style("right", (function(d) {
+                        return d.x + 10
+                    } + "px")
+                    .style("bottom", (function(d){
+                        return d.y + 10
+                    } + "px")
             })
             .on('mouseout', function () {
                 d3.select('#tooltip').style('opacity', 0)
