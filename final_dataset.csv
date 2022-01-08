@@ -1,24 +1,24 @@
-,ticker,frequency,Industry,score
-0,GME,7554,Consumer Cyclical,360351
-1,AMC,5879,Communication Services,206158
-2,PLTR,4992,Technology,90611
-3,NOK,936,Technology,44803
-4,SNDL,1252,Healthcare,37284
-5,WISH,1826,Consumer Cyclical,35522
-6,TSLA,2119,Consumer Cyclical,30824
-7,CLOV,1544,Healthcare,28758
-8,MVIS,1303,Technology,27584
-9,CLNE,1373,Energy,26641
-10,TLRY,1311,Healthcare,23135
-11,UWMC,981,Financial Services,14844
-12,AAPL,949,Technology,13625
-13,RKT,918,Financial Services,13028
-14,WKHS,655,Consumer Cyclical,10360
-15,NIO,585,Consumer Cyclical,8015
-16,EDIT,42,Healthcare,7129
-17,CLF,471,Basic Materials,7090
-18,AMD,629,Technology,6643
-19,SPCE,440,Industrials,6017
-20,CRSR,288,Technology,5124
-21,ASO,399,Consumer Cyclical,5019
-22,OCGN,323,Healthcare,4981
+,ticker,company,frequency,Industry,score,performance,jul_performance
+0,GME,GameStop,7554,Consumer Cyclical,360351,717.53,-27.21
+1,AMC,AMC Entertainment,5879,Communication Services,206158,1215.45,-49.1
+2,PLTR,Palantir Technolgies,4992,Technology,90611,-21.83,-28.39
+3,NOK,Nokia,936,Technology,44803,56.89,16.14
+4,SNDL,Sundial Growers,1252,Healthcare,37284,22.73,-37.08
+5,WISH,ContextLogic (Wish.com),1826,Consumer Cyclical,35522,-82.62,-75.23
+6,TSLA,Tesla,2119,Consumer Cyclical,30824,48.77,56.5
+7,CLOV,Clover Health Investments,1544,Healthcare,28758,-77.93,-70.93
+8,MVIS,Microvision,1303,Technology,27584,-5.27,-69.06
+9,CLNE,Clean Energy Fuels,1373,Energy,26641,-21.26,-38.57
+10,TLRY,Tilray,1311,Healthcare,23135,-13.64,-59.62
+11,UWMC,UWM Holdings,981,Financial Services,14844,-56.4,-28.64
+12,AAPL,Apple,949,Technology,13625,33.46,30.45
+13,RKT,Rocket Companies,918,Financial Services,13028,-27.46,-24.12
+14,WKHS,Workhorse Group,655,Consumer Cyclical,10360,-78.15,-72.61
+15,NIO,NIO,585,Consumer Cyclical,8015,-36.68,-40.81
+16,EDIT,Editas Medicine,42,Healthcare,7129,-61.02,-51.39
+17,CLF,Cleveland-Cliffs,471,Basic Materials,7090,42.65,-2.97
+18,AMD,Advanced Micro Devices,629,Technology,6643,57.58,54.35
+19,SPCE,Virgin Galactic,440,Industrials,6017,-42.28,-69.93
+20,CRSR,Corsair Gaming,288,Technology,5124,-41.51,-34.86
+21,ASO,Academy Sports and Outdoors,399,Consumer Cyclical,5019,107.28,2.03
+22,OCGN,Ocugen,323,Healthcare,4981,41.23,-39.0
