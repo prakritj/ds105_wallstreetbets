@@ -16,7 +16,7 @@
         .append("text").attr("x", 220).attr("y", 130).text("variable A").style("font-size", "15px").attr("alignment-baseline","middle")
         .append("text").attr("x", 220).attr("y", 160).text("variable B").style("font-size", "15px").attr("alignment-baseline","middle")
     
-    var radiusScale = d3.scaleSqrt().domain([4981,360351]).range([10,80])
+    var radiusScale = d3.scaleSqrt().domain([4981,360351]).range([20,100])
 
     var simulation = d3.forceSimulation()
         .force("x", d3.forceX().strength(0.05))
