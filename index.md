@@ -126,7 +126,7 @@ This pattern of only buying stocks also indicates that their holistic investment
 
 **Looking at Sectors**
 
-<div id = "chart">
+<div id = "chart1">
 <script src="visualisation.js" defer></script>
 </div>
 
