@@ -2,7 +2,7 @@
     var width = 500,
         height = 500;
 
-    var svg = d3.select("#chart")
+    var svg = d3.select("#chart3")
         .append("svg")
         .attr("height", height)
         .attr("width", width)
