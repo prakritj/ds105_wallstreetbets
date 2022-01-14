@@ -256,7 +256,9 @@ Regular profit-driven investments recommended by r/WSB seem to be losing proposi
 
 To further develop our understanding of whether r/WSB’s suggestions for the most popular stocks were good we looked towards getting an overview of Redditors’ opinions and emotions to see if they had an ability to predict the movements of stock prices in the future or if they were just reactions to gains/losses in stocks that Redditors bought. Therefore, we ran some sentiment analysis comparing our dataset of r/WSB comments with the popular AFINN Sentiment Lexicon, a dictionary of a couple thousand English words rated for valence with an integer between -5 (negative) and +5 (positive). A sample of some words and their associated valence can be seen below. 
 
-![AFINN_Examples](https://user-images.githubusercontent.com/92174920/149586294-e3261fb5-4487-48d0-9759-bccc243e5155.png)
+|The Valence Associated to Some Words|
+|:--:| 
+|![AFINN_Examples](https://user-images.githubusercontent.com/92174920/149586294-e3261fb5-4487-48d0-9759-bccc243e5155.png)|
 
 The average comment sentiment was -0.35, however the median and mode were 0 - thus, the distribution of comment sentiment was negatively skewed, as shown below.
 
