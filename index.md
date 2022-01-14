@@ -1,7 +1,8 @@
 <link rel="stylesheet" href="styles.css">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.2.2/d3.min.js" defer></script>
 
-*Need to add a TLDR; do so at the end*
+*TLDR* With the sudden explosion in popularity of Reddit community r/WallStreetBets, we asked: is their investment advice any good? We extracted a total of 92,379 comments from 130 Daily Discussion Thread posts on the Reddit forum in the first half of 2021 using the Python Reddit API Wrapper, and analysed them to understand the companies they invest in, their investment rationale, and their sentiment. We then extracted financial data from Yahoo Finance to understand performance of the stocks which r/WSB advocates investment in. We found that r/WSB does not often engage in intellectual nor meaningful discussions, making it unlikely that they are able to outsmart the market and earn good returns. Their investment decisions are unsophisticated and risky, as they invest in companies in a few industries without any With this, we have been able to conduct many analyses and infer many conclusions such as the overall comment sentiment, whether r/WSB sells or shorts, what happens when r/WSB engages in collective action, or invests out of spite, the sentiment and whether all commenters are meaningful or not, …. Our final product consists of an interactive bubble chart with bubble sizes based on total score of the tickers. Our main conclusions are that there is little evidence of any sophisticated analysis done by r/WSB investors before investing in a company, and that r/WSB investors do not diversify their investments and mainly invest in the technology industry. Concerning the return on investment, we concluded that r/WSB investors have focused themselves on two targets: squeezing short sellers and potential growth stocks.
+
 # Exploring the Jungle of r/WSB
 
 ## Context
