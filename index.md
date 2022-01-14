@@ -254,7 +254,9 @@ Regular profit-driven investments recommended by r/WSB seem to be losing proposi
 
 ### Sentiment Analysis and Distribution
 
-To get an overview of the opinions and emotions that people were expressing on Reddit, we ran a sentiment analysis comparing our dataset of r/WSB comments with the popular AFINN Sentiment Lexicon. The AFINN Lexicon is a dictionary of a couple thousand English words rated for valence with an integer between -5 (negative) and +5 (positive).
+To further develop our understanding of whether r/WSB’s suggestions for the most popular stocks were good we looked towards getting an overview of Redditors’ opinions and emotions to see if they had an ability to predict the movements of stock prices in the future or if they were just reactions to gains/losses in stocks that Redditors bought. Therefore, we ran some sentiment analysis comparing our dataset of r/WSB comments with the popular AFINN Sentiment Lexicon, a dictionary of a couple thousand English words rated for valence with an integer between -5 (negative) and +5 (positive). A sample of some words and their associated valence can be seen below. 
+
+![AFINN_Examples](https://user-images.githubusercontent.com/92174920/149586294-e3261fb5-4487-48d0-9759-bccc243e5155.png)
 
 The average comment sentiment was -0.35, however the median and mode were 0 - thus, the distribution of comment sentiment was negatively skewed, as shown below.
 
@@ -262,7 +264,10 @@ The average comment sentiment was -0.35, however the median and mode were 0 - th
 |:--:|
 |![image](https://user-images.githubusercontent.com/92173642/147842092-94823cb6-65a2-4bb7-83dc-0f7f5aca71d9.jpeg)|
 
-Considering the general negativity of the internet, it was not surprising to us that the mean sentiment was negative. However, upon further review, we discovered that the negativity was driven by reactions to negative outcomes on the stock market. In other words, r/WSB investors were upset that their investments had decreased in value, and expressed their dissapointment on r/WSB. A few examples best demonstrate this:
+Considering that r/WSB comments only support the purchase of stocks from our analysis of the categories of comments, we expected overwhelmingly positive sentiment, so a mean negative sentiment was of great surprise to us. Surely, if Redditors were advocating for each other to buy stocks, they must have a positive outlook for stock prices? 
+
+However, upon further review, we discovered that the negativity was driven by reactions to negative outcomes on the stock market. In other words, r/WSB investors were upset that their investments had decreased in value and expressed their disappointment on r/WSB. A few examples best demonstrate this:
+
 
 _**Negative Sentiment Around GME After the Spike**_
 |**Comment**|**Sentiment Score**|
@@ -271,7 +276,7 @@ _**Negative Sentiment Around GME After the Spike**_
 |"BUY BUY BUY. DONT LIVE YOUR LIFE SCARED! IF YOU ARE SCARED TO LOSE A FEW BUCKS BEFORE AMC AND GME BLAST OFF THEN WE DONT NEED YOU"|-4|
 |"So let me get this straight, GME crashes through the floor with a $250 m artificial dump monkey hammer ladder, and no halting. It gets a little steam and boom, trading halted?  Crooked ass NYSE jerks."|-5|
 
-Despite this finding, we also noticed some pecularities with the way the AFINN Lexicon rated our comments. It did not consistently and accurately interpret meaning and tone given the context and language of r/WSB users. Below are a few examples where this is most evident:  
+Alongside this finding, we also noticed some peculiarities with the way the AFINN Lexicon rated our comments. It did not consistently and accurately interpret meaning and tone given the context and language of r/WSB users. Below are a few examples where this is most evident:  
 
 |**Comment**|**Sentiment Score**|
 |:---|:---:|
@@ -279,9 +284,11 @@ Despite this finding, we also noticed some pecularities with the way the AFINN L
 |"Reddit's EFT is on FIRE, GME 151%, BB 13% (w.e. but still), AMC 300%, LOOK AT US WE'RE THE HEDGE MANAGER NOW."|-2|
 |"Daily popular ticker thread words great. Instead of 165 tickers getting spammed by bag holders in the daily it's only 162, much more manageable".|+6|
 
-"To the moon" is a *very* common phrase used by r/WSB to show their support for a certain stock and reflects a positive sentiment. However, as shown in the first comment, this is not reflected in the AFINN Sentiment Score. As the Lexicon has a limited number of words in the dictionary, many comments go unrated, explaining our mode of a 0 sentiment score. In the second comment, the commenter uses "fire" in a positive way to suggest that the stocks they mentioned were going up, yet the AFINN Lexico interprets this word in a negative way and attributes it a negative sentiment score. Social media users also regularly use irony and sarcasm, which the AFINN Lexicon is unable to understand; the third comment is therefore incorrectly attributed a positive sentiment score. Ultimately, the AFINN Lexicon may not be the best method to analysis the sentiment of social media comments - had we known this earlier, we may have opted to use machine learning methods instead.
+"To the moon" is a *very* common phrase used by r/WSB to show their support for a certain stock and reflects a positive sentiment. However, as shown in the first comment, this is not reflected in the AFINN Sentiment Score. As the Lexicon has a limited number of words in the dictionary, many comments go unrated, explaining our mode sentiment score of 0. In the second comment, the commenter uses "fire" in a positive way to suggest that the stocks they mentioned were going up, yet the AFINN Lexicon interprets this word in a negative way and attributes it a negative sentiment score. Social media users also regularly use irony and sarcasm, which the AFINN Lexicon is unable to understand; the third comment is therefore incorrectly attributed a positive sentiment score. Ultimately, the AFINN Lexicon may not be the best method to analysis the sentiment of social media comments - had we known this earlier, we may have opted to use machine learning methods instead.
 
 Despite the limitations of our sentiment analysis method, after having perused many comments and their attributed sentiment, we still believe that our previous proposition – that the overall sentiment on r/WSB was negative due to poor performance of stocks of interest – holds true.
+
+This means that the investments of r/WSB are generally not paying off, since they are unhappy about the direction that stocks move, suggesting that r/WSB may not be making the correct investment choices and are advocating for the wrong stocks the majority of the time.
 
 
 ## Conclusion
