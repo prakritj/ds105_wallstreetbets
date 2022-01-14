@@ -129,6 +129,7 @@ This pattern of only buying stocks also indicates that their holistic investment
 <div id = "chart1">
 <script src="visualisation.js" defer></script>
 </div>
+
 ![image](https://user-images.githubusercontent.com/92173642/149561512-a87b1d0c-cd6c-4278-b74e-fa92be0dc2dd.png)
 
 Investors can also decrease their exposure to risk by investing in several different economic sectors which are unlikely to fail synchronously. Therefore, we examined which sectors were popular with r/WSB users to determine whether it was diversified. Sector data was pulled from yahoo Finance using the `yfinance` Python module. Yahoo Finance has 11 different sectors - r/WSB's Top 23 stocks covered 8 of them. Though this seems diversified on the face of it, once we weighed sectors by the Reddit score that comments referencing their respective companies had received, it was clear that only a few industries had been popular. 
@@ -167,6 +168,9 @@ Having discussed r/WSB's investment strategies (or lack thereof) as well as tren
 <div id = "chart2">
 <script src="visualisation2.js" defer></script>
 </div>
+
+![image](https://user-images.githubusercontent.com/92173642/149563008-9cdc205e-bf97-4b12-b9e9-56aba8e1ce6e.png)
+
 In line with what we saw with sectors, there is a marked difference in performance between companies where r/WSB attempted to squeeze out short-sellers, and those where r/WSB tried to bet on true growth. 
 
 _Short Squeeze Stocks_
@@ -242,6 +246,8 @@ Based on the difference between the first and second half of 2021, it is evident
 <div id = "chart3">
 <script src="visualisation3.js" defer></script>
 </div>
+
+![image](https://user-images.githubusercontent.com/92173642/149563069-990a7003-502c-4270-82b7-f129698f5c02.png)
 
 Regular profit-driven investments recommended by r/WSB seem to be losing propositions in general. Short squeeze investments are profitable, but only for a select few. To profit from these investments, one has to enter _before_ the hype created by Reddit (ex-ante). To do so, they need to predict that a craze would erupt, a difficult task given the thousands of comments every day. Instead, it is more plausible that profiteers are just 'lucky' that they invested at the right time and closed their positions before a subsequent crash.
 
