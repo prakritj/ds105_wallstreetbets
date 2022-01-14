@@ -304,3 +304,6 @@ _Social Consequences_
 Although this wasn't the original scope of our venture, we would also like to shed some light on the social consequences of r/WSB based on our observation. With the large size of the community, many Redditors are investing a significant portion of their life savings in these stocks instead of following professional advice or financial norms. The fact that such a large investing community is propogating advice which isn't demonstrably profitable raises the decent possibility that many will be a victim of such advice, losing much of their savings. Some, we assume, will have to work past their ideal age of retirement. Others may not being able to retire at all. A *very* small portion may be able to retire earlier - but who wants to take such a gamble with their retirement? Overall, we think that there are dangerous consequences to the booming popularity of these social media feeds and we urge for such a consideration in future research and policies.
 
 #### Appendix
+
+- The code we wrote and used for our project to retrieve and analyse our data can be viewed [on our GitHub repository here](https://github.com/prakritj/ds105_wsb).
+- We used a variety of resources online to complete our project. A list of these resources can be viewed [here](https://github.com/prakritj/ds105_wsb/blob/gh-pages/appendix.md).
