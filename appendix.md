@@ -6,4 +6,4 @@ In writing and developing our project, we used a number of resources online. Tha
 - [This guide](https://medium.com/@kj_schmidt/show-data-on-mouse-over-with-d3-js-3bf598ff8fc2) by KJ Schmidt helped us implement mouseover features for our Javascript visualisations.
 - Financial Data was obtained from [Yahoo Finance](https://finance.yahoo.com) using the [yfinance Python package](https://pypi.org/project/yfinance/).
 - Sentiment Analysis referenced the AFINN Lexicon. The version we used is accessible [here](https://github.com/prakritj/ds105_wsb/blob/main/AFINN_english.txt).
-- We used the [Python NLTK package](https://www.nltk.org) and the [Readability package](https://pypi.org/project/readability/) for our textual analysis, such as to calculate Flesch-Kincaid Reading Level. 
+- We used the [Python NLTK package](https://www.nltk.org) and the [Textstat package](https://pypi.org/project/textstat/) for our textual analysis, such as to calculate Flesch-Kincaid Reading Level. 
