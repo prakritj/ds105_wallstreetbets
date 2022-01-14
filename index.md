@@ -77,7 +77,7 @@ Unlike some social media forums where the average user is indeed very young, r/W
 
 However, there are some limitations with applying the Flesch-Kincaid Reading Level methodology to our dataset. Social media comments are generally short with fewer sentences and words compared to other media. Because of the way reading level is calculated (see below), these comments can generate low (or even negative) reading levels, underestimating the writer's intelligence. Therefore, we conducted a deeper analysis, looking at comments with their respective reading level to determine whether there were any discrepancies.
 
-![image](https://user-images.githubusercontent.com/92173642/147844306-5f73bb58-591e-4634-83fd-45b3f2b6ce9a.png)
+![image](https://user-images.githubusercontent.com/92173642/149560335-b29d3e49-6cfc-444f-b957-74363f86a2af.png)
 
 When examining these comments and their attributed reading level, it's no surprise that the average Flesch-Kincaid Reading Level was so low. They are often short phrases with little-to-no analysis, not saying much beyond a stock ticker itself:
 
