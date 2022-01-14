@@ -1,6 +1,6 @@
 In writing and developing our project, we used a number of resources online. Thank you to all who maintain or contribute to the upkeep and production of these resources. See a list of these resources (in no particular order) below.
 
-- Data from [Reddit](https://reddit.com/r/wsb) was retrieved using [Python Reddit API Wrapper (PRAW)](https://praw.readthedocs.io/en/stable/).
+- Data from [Reddit](https://reddit.com/r/wallstreetbets) was retrieved using [Python Reddit API Wrapper (PRAW)](https://praw.readthedocs.io/en/stable/).
 - In developing our interactive visualisation components, we utilised the [D3.js (Data-Driven Documents) Javascript library](https://d3js.org).
 - [This tutorial](https://www.youtube.com/watch?v=lPr60pexvEM) by Jonathan Soma helped us develop our Javascript elements and integrate them into our webpage.
 - [This guide](https://medium.com/@kj_schmidt/show-data-on-mouse-over-with-d3-js-3bf598ff8fc2) by KJ Schmidt helped us implement mouseover features for our Javascript visualisations.
